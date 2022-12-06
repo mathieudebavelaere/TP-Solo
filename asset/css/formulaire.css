@@ -1,0 +1,62 @@
+
+h1 {
+    text-align: center;
+}
+
+.boiteBox {
+    padding: 5%;
+    display: grid;
+    grid-template-columns:  40% 60%;
+    text-decoration: none;
+    height: 90%;
+    width: 90%;
+    font-size: 70%;
+    text-align: center;
+    border: solid rgb(13, 75, 87) 1px;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: #476d87ca;
+}
+
+
+.box {
+    grid-column: 2/2;
+    height: 43px;
+    width: 93%;
+    font-size: 13px;
+    border: solid rgba(245, 245, 245, 0.53) 1px;
+    border-radius: 3px;
+    padding-left: 5%;
+    color: whitesmoke;
+    background-color: #37566988;
+}
+
+
+.boutonF {
+    text-decoration: none;
+    height: 30px;
+    margin-left: 198%;
+    width: 50%;
+    font-size: 15px;
+    text-align: center;
+    border: solid rgba(245, 245, 245, 0.464) 1px;
+    border-radius: 3px;
+    color: whitesmoke;
+    background-color: #47877d;
+}
+
+.boutonF:hover {
+    background-color: #366860;
+}
+
+.line {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.183);
+    border-radius: 2px;
+    padding-left: 4%;
+}

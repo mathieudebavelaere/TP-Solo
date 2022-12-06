@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="asset/css/Nav-Foot.css">
+    <link rel="stylesheet" href="asset/css/compteUtilisateur.css">
+    <title>Compte</title>
+</head>
+
+<body>
+    <!-----------------------NavBar------------------------->
+    <nav id="navBar">
+        <img id="logo" src="./asset/img/koopa.png" alt="logo">
+        <div id="boiteConex">
+            <input class="input" type="mail" placeholder="e-mail">
+            <input class="input" type="password" placeholder="mot de passe">
+        </div>
+
+        <div id="boiteConex2"> <a class="bouton" href="./compteUtilisateur.html">
+                <p>Compte</p>
+            </a>
+            <a class="bouton" href="./index.html">
+                <p>Connexion</p>
+            </a>
+            <a class="bouton" href="./formulaire.html">
+                <p>Inscription</p>
+            </a>
+        </div>
+    </nav>
+    <!--------------------FinDeNavBar----------------------->
+    <div id="corps">
+        <div id="boxUser"></div>
+        <!--------------------BarredeRecherche----------------------->
+        <div id="searchGame">
+            <input class="search" type="search" placeholder="Rechercher une Carte de Jeux">
+            <button class="boutonSearch" type="submit"></button>
+        </div>
+        <!--------------------FinDeBarredeRecherche----------------------->
+        <div id="parentGame">
+            <div id="BlocOnglet">
+                <div id="onglet1" class="ongletOpen">
+                    <p>Favoris</p>
+                </div>
+                <div id="onglet2" class="onglet">
+                    <p>Bibliothèque</p>
+                </div>
+                <div id="onglet3" class="onglet">
+                    <p>Comparatif</p>
+                </div>
+                <div id="onglet4" class="onglet">Mon Profil</div>
+                <div id="boxGame">
+                    <!--------------------ongletOne---------------------------------------------------------------------------->
+                    <div id="ongletOne" class="visible">
+
+                        <div id="cardGame">
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Modern Warfare</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande1.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Ragnarok</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande2.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Unboung</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande3.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>The Callisto Protocol</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande4.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--------------------ongletTwo---------------------------------------------------------------------------->
+                    <div id="ongletTwo" class="noVisible scroller">
+                        <div id="cardGame">
+                            <div class="catégorie"><p>Jeux en Cour</p></div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Modern Warfare</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande1.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Ragnarok</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande2.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Unboung</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande3.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>The Callisto Protocol</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande4.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Modern Warfare</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande1.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+
+
+                            <div class="catégorie"><p>Jeux Terminer</p></div>
+
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Ragnarok</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande2.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Unboung</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande3.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>The Callisto Protocol</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande4.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Modern Warfare</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande1.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Ragnarok</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande2.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>Unboung</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande3.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div class="cardB">
+                                <div class="cardF">
+                                    <div class="titre">
+                                        <p>The Callisto Protocol</p>
+                                    </div>
+                                    <div class="pochette"><img class="image" src="asset/img/bande4.png" alt="cod" />
+                                    </div>
+                                </div>
+                                <div class="progressbar-wrapper">
+                                    <div title="downloaded" class="progressbar mp4">70%</div>
+                                </div>
+                                <div class="ligne2">
+                                    <p>Trophées</p>
+                                    <img class="icon" src="asset/img/trophee.png" alt="trophée">
+                                </div>
+                                <div class="ligne3">
+                                    <p>Replay</p>
+                                    <img class="icon" src="asset/img/loupe.png" alt="loupe">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--------------------ongleThree---------------------------------------------------------------------------->
+                    <div id="ongletThree" class="noVisible">
+
+
+
+
+
+
+                        
+                    </div>
+                    <!--------------------ongletFour---------------------------------------------------------------------------->
+                    <div id="ongletFour" class="noVisible">number 4</div>
+
+
+                </div>
+            </div>
+        </div>
+        <!------------------------Footer------------------------->
+        <footer id="footer">
+
+        </footer>
+        <!---------------------FinDeFooter----------------------->
+        <script src="./asset/js/onglet.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="asset/css/Nav-Foot.css">
+    <link rel="stylesheet" href="asset/css/formulaire.css">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <!-----------------------NavBar------------------------->
+    <nav id="navBar">
+        <img id="logo" src="./asset/img/koopa.png" alt="logo">
+        <div id="boiteConex">
+            <input class="input" type="mail" placeholder="e-mail">
+            <input class="input" type="password" placeholder="mot de passe">
+        </div>
+        <div id="boiteConex2">
+            <a class="bouton" href="./compteUtilisateur.html">
+                <p>Compte</p>
+            </a>
+            <a class="bouton" href="./index.html">
+                <p>Connexion</p>
+            </a>
+            <a class="bouton" href="./formulaire.html">
+                <p>Inscription</p>
+            </a>
+        </div>
+    </nav>
+    <!--------------------FinDeNavBar----------------------->
+
+    <div id="corps">
+        <form action="#" method="POST"></form>
+        <div class="boiteBox">
+            <h1>Fiche d'inscription</h1>
+
+
+
+            <div class="line"><label for="firstName">
+                    <p>Nom :</p>
+            </div></label>
+           
+                <input id="firstName" required class="box" type="text" placeholder="Nom">
+            
+
+            <div class="line"><label for="lastName">
+                    <p>Prénom :</p>
+            </div></label>
+            <input id="lastName" required class="box" type="text" placeholder="Prénom">
+
+
+            <div class="line"><label for="birthDay">
+                    <p>Date de naissance</p>
+                </label></div>
+            <input id="birthDay" required class="box" type="Date" id="Birthday">
+
+
+            <div class="line"><label for="eMail">
+                    <p>E-mail :</p>
+            </div></label>
+            <input id="eMail" required class="box" type="mail" placeholder="e-mail">
+
+
+            <div class="line"><label for="passWord">
+                    <p>Mot de Passe :</p>
+            </div></label>
+            <input id="passWord" required class="box" type="password" placeholder="Mot de passe">
+
+            <div class="line"><label for="confPassWord">
+                    <p>Confirmation de Mot de Passe :</p>
+            </div></label>
+            <input id="confPassWord" required class="box" type="password" placeholder="Confirmation de mot de passe">
+
+
+            <button id="validateFormulaire" type="submit" class="boutonF">Valider</button>
+            </form>
+
+
+        </div>
+    </div>
+    <!------------------------Footer------------------------->
+    <footer id="footer">
+
+    </footer>
+    <!---------------------FinDeFooter----------------------->
+    <script src="./asset/js/formulaire.js"></script>
+</body>
+
+</html>
