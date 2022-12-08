@@ -5,6 +5,8 @@
 }
 
 #footer {
+    position: absolute;
+    z-index: 1;
     height: 200px;
     background-color: #779cab;
 }

@@ -10,9 +10,10 @@
 /*--------Pour agrandire mon contenu de ma boxGame je modifie la hauteur de ma div 'parentGame' directment 
 cela ajustera mon contenu directement----------*/
 #parentGame {
+
     position: relative;
     margin-top: 20px;
-    height: 500px;
+    height: 550px;
     width: 100%;
     margin-bottom: 3%;
 }
@@ -54,27 +55,27 @@ cela ajustera mon contenu directement----------*/
 .onglet:hover {
     margin-top: 10px;
     transition: 0.5s;
-    color: rgb(177, 131, 2);
+    color: #b18302;
     background-color: rgba(240, 248, 255, 0.728);
 }
 
 .visible {
     opacity: 100%;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .noVisible {
     opacity: 0%;
     visibility: hidden;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .ongletOpen {
     height: 30%;
     width: 20%;
     text-align: center;
-    border: solid rgb(255, 255, 255) 1px;
     border-radius: 5px;
+    border: solid rgb(255, 255, 255) 1px;
     margin-top: 10px;
     color: rgb(177, 131, 2);
     background-color: rgba(240, 248, 255, 0.728);
@@ -137,7 +138,7 @@ cela ajustera mon contenu directement----------*/
     width: 80%;
     border: solid rgb(255, 255, 255) 1px;
     border-radius: 100px;
-    background-color: rgba(25, 60, 90, 0.587);
+    background-color: #193c5a96;
     box-shadow: rgba(117, 117, 117, 0.788) 5px 5px 5px;
 }
 
@@ -157,22 +158,26 @@ cela ajustera mon contenu directement----------*/
     height: 200px;
     width: 400px;
 }
+
 .textUser {
-margin-left: 5%;
-color: whitesmoke;
-font-size: 35px;
+    margin-left: 5%;
+    color: whitesmoke;
+    font-size: 35px;
 }
+
 .badgeUser {
     margin-left: 5%;
-    color: rgb(171, 133, 44);
+    color: #ab852c;
     font-size: 20px;
 }
+
 #boiteBadge {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     margin-left: 5%;
 }
+
 #badgeRecomp {
     height: 40px;
     width: 40px;
@@ -187,10 +192,11 @@ font-size: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    height:100%;
+    height: 100%;
     width: 20%;
-   
+
 }
+
 .cardBUser {
     display: flex;
     align-items: center;
@@ -204,6 +210,7 @@ font-size: 35px;
     background-color: #a2a2a2;
     box-shadow: rgba(0, 0, 0, 0.295) 5px 5px 5px;
 }
+
 .cardFUser {
     text-align: center;
     font-size: 100%;
@@ -212,6 +219,7 @@ font-size: 35px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
 }
+
 /*----------------------------OngletOne-------------------------------*/
 #ongletOne {
     position: absolute;
@@ -223,11 +231,12 @@ font-size: 35px;
     height: 100%;
     width: 100%;
 }
+
 /*----------------------------CardGame------------------------------*/
+
 #cardGame {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     justify-content: flex-start;
     margin: 2%;
     width: 100%;
@@ -311,42 +320,7 @@ font-size: 35px;
     background-color: rgb(106, 106, 106);
 }
 
-/*---------------- barre de progression ------------------*/
-:root {
-    --success: #00b894;
-    --progress: #e17055;
-}
 
-.progressbar-wrapper {
-    text-align: center;
-    background-color: #dfe6e9;
-    color: white;
-    border-radius: 10px;
-    width: 90%;
-    box-shadow: 0px 5px 0px rgba(146, 146, 146, 0.623);
-}
-
-.progressbar {
-    background-color: var(--progress);
-    color: white;
-    text-align: right;
-    font-size: 17px;
-    border-radius: 10px;
-}
-
-.progressbar[title="downloading"] {
-    background-color: var(--progress);
-}
-
-.progressbar[title="downloaded"] {
-    background-color: var(--progress);
-}
-
-.mp4 {
-    width: 70%;
-}
-
-/*---------------- barre de progression ------------------*/
 
 /*---------------------OngletTwo---------------------------*/
 #ongletTwo {
@@ -384,17 +358,103 @@ font-size: 35px;
     position: absolute;
     z-index: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
 }
 
+#listFriends {
+    height: 90%;
+    width: 35%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    border: solid white 1px;
+    background-color: #5b5b5b41;
+}
+
+.scroller {
+    overflow-y: scroll;
+}
+
+#listFriends::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+#listFriends::-webkit-scrollbar-thumb {
+
+    background-color: rgba(221, 221, 221, 0.436);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid rgba(56, 56, 56, 0);
+    /* creates padding around scroll thumb */
+}
+
+.titleFriends {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: whitesmoke;
+    width: 38%;
+    height: 5%;
+}
 
 
+#friends {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    height: 25%;
+    width: 90%;
+    margin: 3%;
+    border-radius: 5px;
+    border: solid rgb(255, 255, 255) 1px;
+    background-color: #cbcbcb;
+}
 
+#photoFirends {
+    height: 90%;
+    width: 25%;
+    margin-left: 2%;
+    border-radius: 20%;
+    background-color: #5b5b5b;
+}
 
+#descriptFriends {
+    color: whitesmoke;
+    margin-left: 5%;
 
+}
+
+.boxFriends {
+    margin: 5%;
+    width: 200px;
+    background-color: #959595;
+}
+
+#mainFriends {
+    height: 90%;
+    width: 60%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    border: solid white 1px;
+    background-color: #5b5b5b41;
+}
+
+.profilFriends {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62%;
+    height: 5%;
+    font-size: 20px;
+    color: whitesmoke;
+}
 
 /*---------------------OngletFour---------------------------*/
 #ongletFour {
@@ -405,5 +465,104 @@ font-size: 35px;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-    background-color: rgba(63, 42, 165, 0.532);
+}
+
+#titleReglage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5%;
+    width: 100%;
+    margin-top: 1%;
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+#boxReglage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 95%;
+    margin-bottom: 1%;
+    border-radius: 5px;
+    border: solid white 1px;
+    background-color: #5b5b5b41;
+}
+
+.avatarReglage {
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+    background-image: url('#');
+    background-color: #cbcbcb;
+    margin-right: 2%;
+}
+
+#boiteReglageG {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    margin-left: 3%;
+}
+
+.boutonReglage {
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5%;
+    color: whitesmoke;
+    background-color: #3071ab96;
+    border: solid whitesmoke 1px;
+}
+
+.boutonReglage:hover {
+    background-color: #193c5a96;
+}
+
+#boiteReglageD {
+    height: 100%;
+    width: 60%;
+    margin: 5%;
+}
+
+.profilReglage {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   margin-top: 5%;
+}
+
+.box {
+    margin-top: 2%;
+    height: 43px;
+    width: 70%;
+    font-size: 13px;
+    border: solid rgba(245, 245, 245, 0.53) 1px;
+    border-radius: 3px;
+    padding-left: 5%;
+    color: whitesmoke;
+    background-color: #37566988;
+}
+
+.boutonF {
+    margin-top: 2%;
+    height: 30px;
+    width: 40%;
+    font-size: 15px;
+    text-align: center;
+    border: solid rgba(245, 245, 245, 0.464) 1px;
+    border-radius: 3px;
+    color: whitesmoke;
+    background-color: #3071ab96;
+    border: solid whitesmoke 1px;
+}
+
+.boutonF:hover {
+    background-color: #366860;
 }

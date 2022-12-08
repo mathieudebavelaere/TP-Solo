@@ -1,0 +1,39 @@
+body {
+    background-color: rgb(113, 113, 113);
+}
+
+#gameCard {
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+#titreCard {
+    display: flex;
+    justify-content: center;
+    color: #a0873d;
+}
+#photoCard {
+    height: 200px;
+ border-radius: 10px;
+    background-image: url('../img/bande2.png') ;
+    background-size: 100% 100%;
+}
+#infoCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#buttonCardS {
+    position: relative;
+    z-index: 1;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: solid #ffffff 1px;
+    background-color: #cb991b99;
+}
+.starsGame {
+    background-image: url('../img/stars.png');
+    background-size: 100% 100%;
+}
