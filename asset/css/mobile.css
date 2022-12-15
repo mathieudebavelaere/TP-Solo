@@ -1,0 +1,39 @@
+@media screen and (max-width:768px) {
+body {
+    background-color: rgb(75, 75, 75);
+}
+#corps {
+   width: 90%;
+   margin: 0%;
+}
+#boxGame {
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    border: solid rgb(255, 255, 255) 1px;
+    background-color: #567188;
+    border-radius: 5px;
+}
+#BlocOnglet {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.onglet {
+    display: none;
+}
+#boxGame {
+    position: absolute;
+    margin-top: 40px;
+  
+    width: 100%;
+    border: solid rgb(255, 255, 255) 1px;
+    background-color: #567188;
+    border-radius: 5px;
+}
+
+}

@@ -1,14 +1,18 @@
-
+body {
+    background-color: #1f2428;
+}
 #navBar {
-    height: 100px;
-    background-color: #7d8d9a;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    background-color: #37546b;
 }
 
 #footer {
-    position: absolute;
-    z-index: 1;
+
     height: 200px;
-    background-color: #779cab;
+    background-color: #1a3f4e;
 }
 
 * {
@@ -21,7 +25,6 @@
 
 
 #logo {
-    position: absolute;
     margin: 4px;
     margin-left: 20px;
     height: 90px;
@@ -32,7 +35,9 @@
     padding: 5%;
     justify-content: center;
     align-content: center;
-    background-image: url('../img/background.png');
+    height: auto;
+    background-image: url('../img/backspace.jpeg');
+    background-size: 100%;
 }
 
 
@@ -40,41 +45,37 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 0.5%;
 }
 
 #boiteConex2 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-end;
-    margin: 0.1%;
+   
 }
 
 .bouton {
     text-decoration: none;
     height: 20px;
     margin: 0.2%;
-    width: 7.5%;
+    width: 100%;
     font-size: 90%;
     justify-content: center;
     text-align: center;
     border: solid whitesmoke 1px;
     border-radius: 3px;
     color: whitesmoke;
-    background-color: #47877d;
+    background-color: #ffffff85;
 }
 
 .bouton:hover {
-    background-color: #366860;
+    background-color: #193c5a53;
 }
 
 .input {
     height: 20px;
     margin: 0.1%;
-    width: 15%;
+    width: auto;
     text-align: center;
     border: solid whitesmoke 1px;
     border-radius: 3px;

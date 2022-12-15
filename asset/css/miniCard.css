@@ -1,39 +1,83 @@
-body {
-    background-color: rgb(113, 113, 113);
-}
 
-#gameCard {
+#card {
+    margin: 1%;
     height: 300px;
     width: 200px;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.09);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
 }
-#titreCard {
+
+#titleCard {
     display: flex;
+    align-items: center;
     justify-content: center;
-    color: #a0873d;
+    font-size: 12px;
+    margin: 5%;
+    color: rgb(255, 255, 255, 0.8);
+    border-radius: 50px;
+    height: 20px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+
 }
-#photoCard {
-    height: 200px;
- border-radius: 10px;
-    background-image: url('../img/bande2.png') ;
-    background-size: 100% 100%;
+
+#coverCard {
+    height: 195px;
+    width: 97%;
+    border-radius: 10px;
 }
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#boiteCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    height: 50px;
+    width: 100%;
+}
+
+#starsCard {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-image: url(../img/stars.png);
+    background-size: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#starsCard:hover {
+    background-color: rgba(254, 167, 46, 0.5);
+    transition: 0.5s;
+}
+
 #infoCard {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-}
-#buttonCardS {
-    position: relative;
-    z-index: 1;
-    height: 30px;
-    width: 30px;
+    justify-content: center;
+    height: 35px;
+    width: 100px;
+    color: rgb(255, 255, 255, 0.8);
     border-radius: 50px;
-    border: solid #ffffff 1px;
-    background-color: #cb991b99;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
 }
-.starsGame {
-    background-image: url('../img/stars.png');
-    background-size: 100% 100%;
+
+#infoCard:hover {
+    color: rgb(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
 }

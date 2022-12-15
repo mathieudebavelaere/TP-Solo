@@ -36,51 +36,59 @@
     <div id="corps">
         <form action="#" method="POST"></form>
         <div class="boiteBox">
-            <h1>Fiche d'inscription</h1>
+            <div id="boiteBoxBlur">
+                <h1>Fiche d'inscription</h1>
 
 
 
-            <div class="line"><label for="firstName">
-                    <p>Nom :</p>
-            </div></label>
-           
-                <input id="firstName" required class="box" type="text" placeholder="Nom">
-            
-
-            <div class="line"><label for="lastName">
-                    <p>Prénom :</p>
-            </div></label>
-            <input id="lastName" required class="box" type="text" placeholder="Prénom">
-
-
-            <div class="line"><label for="birthDay">
-                    <p>Date de naissance</p>
-                </label></div>
-            <input id="birthDay" required class="box" type="Date" id="Birthday">
-
-
-            <div class="line"><label for="eMail">
-                    <p>E-mail :</p>
-            </div></label>
-            <input id="eMail" required class="box" type="mail" placeholder="e-mail">
-
-
-            <div class="line"><label for="passWord">
-                    <p>Mot de Passe :</p>
-            </div></label>
-            <input id="passWord" required class="box" type="password" placeholder="Mot de passe">
-
-            <div class="line"><label for="confPassWord">
-                    <p>Confirmation de Mot de Passe :</p>
-            </div></label>
-            <input id="confPassWord" required class="box" type="password" placeholder="Confirmation de mot de passe">
-
-
-            <button id="validateFormulaire" type="submit" class="boutonF">Valider</button>
-            </form>
-
-
+                <!--------------------FirstName------------------------->
+                <label for="firstName">
+                    <div id="blockFirstName">
+                        <p id="placeFirstName" class="textL">Nom</p>
+                        <input id="firstName" type="text">
+                    </div>
+                </label>
+                <!--------------------LastName------------------------->
+                <label for="lastName">
+                    <div id="blockLastName">
+                        <p id="placeLastName" class="textL">Prénom</p>
+                        <input id="lastName" type="text">
+                    </div>
+                </label>
+                <!--------------------LastName------------------------->
+                <label for="birthDay">
+                    <div id="blockBirthDay">
+                        <p id="placeBirthDay" class="textBL">Date</p>
+                        <input id="birthDay" type="date">
+                    </div>
+                </label>
+                <!--------------------Mails------------------------->
+                <label for="mails">
+                    <div id="blockMails">
+                        <p id="placeMails" class="textL">E-mail</p>
+                        <input id="mails" type="mail">
+                    </div>
+                </label>
+                <!--------------------PWD------------------------->
+                <label for="passWord">
+                    <div id="blockPassWord">
+                        <p id="placePassWord" class="textPWL">Mot de passe</p>
+                        <input id="passWord" type="password">
+                    </div>
+                </label>
+                <!--------------------CPWD------------------------->
+                <label for="confPassWord">
+                    <div id="blockConfPassWord">
+                        <p id="placeConfPassWord" class="textPWL">Comfirmation de mot de passe</p>
+                        <input id="confPassWord" type="password">
+                    </div>
+                </label>
+                <!--------------------BTN-Valider------------------------>
+                <button id="validateFormulaire">Valider</button>
+                </form>
+            </div>
         </div>
+    </div>
     </div>
     <!------------------------Footer------------------------->
     <footer id="footer">

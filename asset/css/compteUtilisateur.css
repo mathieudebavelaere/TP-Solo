@@ -1,16 +1,13 @@
 #corps {
     flex-direction: column;
     align-items: center;
-    background-color: rgb(151, 151, 151);
     background-image: url('#');
-
 }
 
 
 /*--------Pour agrandire mon contenu de ma boxGame je modifie la hauteur de ma div 'parentGame' directment 
 cela ajustera mon contenu directement----------*/
 #parentGame {
-
     position: relative;
     margin-top: 20px;
     height: 550px;
@@ -25,7 +22,9 @@ cela ajustera mon contenu directement----------*/
     height: 100%;
     width: 100%;
     border: solid rgb(255, 255, 255) 1px;
-    background-color: #567188;
+    background-image: url('../img/backspace.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     border-radius: 5px;
 }
 
@@ -56,7 +55,7 @@ cela ajustera mon contenu directement----------*/
     margin-top: 10px;
     transition: 0.5s;
     color: #b18302;
-    background-color: rgba(240, 248, 255, 0.728);
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
 .visible {
@@ -78,43 +77,7 @@ cela ajustera mon contenu directement----------*/
     border: solid rgb(255, 255, 255) 1px;
     margin-top: 10px;
     color: rgb(177, 131, 2);
-    background-color: rgba(240, 248, 255, 0.728);
-}
-
-#searchGame {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 3%;
-    background-color: rgb(128, 127, 127);
-    height: 50px;
-    width: 70%;
-    border-radius: 5px;
-    border: solid rgb(255, 255, 255) 1px;
-}
-
-.search {
-    width: 50%;
-}
-
-.search::placeholder {
-    color: rgba(128, 128, 128, 0.892);
-}
-
-.boutonSearch {
-    margin-left: 2%;
-    width: 10%;
-    height: 16px;
-    border-radius: 5px;
-    background-color: rgba(135, 135, 135, 0.792);
-    border: solid rgba(255, 255, 255, 0);
-    background-size: 110% 110%;
-    background-repeat: no-repeat;
-}
-
-.boutonSearch:hover {
-    background-color: rgb(207, 207, 207);
+    background-color: rgba(255, 255, 255, 0.863);
 }
 
 .catégorie {
@@ -126,36 +89,48 @@ cela ajustera mon contenu directement----------*/
     margin-left: 60px;
     border-radius: 5px;
 }
-
+#boitecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
 /*----------------------------UserBox-------------------------------*/
 #boxUser {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 2%;
-    height: 250px;
-    width: 80%;
+    padding: 1%;
+    margin-right: 2%;
+    height: 200px;
+    width: 70%;
     border: solid rgb(255, 255, 255) 1px;
-    border-radius: 100px;
-    background-color: #193c5a96;
-    box-shadow: rgba(117, 117, 117, 0.788) 5px 5px 5px;
+    border-radius: 10px;
+    background-image: url('../img/backspace.jpeg');
 }
 
 #avatarUser {
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
     border-radius: 15%;
-    background-image: url('#');
-    background-color: #cbcbcb;
-    margin-right: 2%;
+    background-image: url('../img/koopa.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: solid whitesmoke 1px
+}
+#psnPlus {
+height: 30px;
+margin-left: 10%;
 }
 
 #profilUser {
     display: flex;
     align-items: flex-start;
-    flex-direction: column;
-    height: 200px;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
     width: 400px;
 }
 
@@ -173,19 +148,20 @@ cela ajustera mon contenu directement----------*/
 
 #boiteBadge {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
     margin-left: 5%;
 }
-
+#numberTrophée {
+    color: whitesmoke;
+    margin-right: 2%;
+}
 #badgeRecomp {
     height: 40px;
     width: 40px;
     margin: 10px;
     margin-left: 20px;
-    border-radius: 100%;
-    background-image: url('#');
-    background-color: #a0873d;
 }
 
 #cardUser {
@@ -219,7 +195,20 @@ cela ajustera mon contenu directement----------*/
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
 }
+/*----------------------------historiqueGame-------------------------------*/
+#boxHG {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+    height: 300px;
+    width: 250px;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 10px;
+    background-image: url('../img/backspace.jpeg');
+}
 
+/*----------------------------historiqueGame-------------------------------*/
 /*----------------------------OngletOne-------------------------------*/
 #ongletOne {
     position: absolute;
@@ -237,97 +226,18 @@ cela ajustera mon contenu directement----------*/
 #cardGame {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:space-evenly;
     margin: 2%;
     width: 100%;
 }
-
-.cardB {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 0.9%;
-    margin-left: 2.5%;
-    height: 400px;
-    width: 220px;
-    padding: 5px;
-    row-gap: 2px;
-    border-radius: 15px;
-    border: solid #eeaf02 1px;
-    background-color: #a2a2a2;
-    box-shadow: rgba(0, 0, 0, 0.295) 5px 5px 5px;
-}
-
-.cardF {
-    text-align: center;
-    font-size: 100%;
-    width: 90%;
-    height: 60%;
-    border-radius: 10px;
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
-}
-
-.titre {
-    color: rgb(177, 131, 2);
-    margin: 10px;
-
-}
-
-.image {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.pochette {
-    height: 85%;
-    border-radius: 10px;
-    background-color: rgb(222, 180, 67);
-    border: solid rgb(222, 180, 67) 1px;
-    margin: 0%;
-}
-
-.ligne1,
-.ligne2,
-.ligne3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    height: 5%;
-    width: 90%;
-    border-radius: 10px;
-    text-align: center;
-    color: rgb(198, 150, 16);
-    box-shadow: 0px 5px 0px rgb(195, 194, 205);
-    background-color: rgb(255, 255, 255);
-    margin: 0%;
-}
-
-.icon {
-    height: 80%;
-}
-
-.ligne2:hover {
-    color: white;
-    background-color: rgb(106, 106, 106);
-}
-
-.ligne3:hover {
-    color: white;
-    background-color: rgb(106, 106, 106);
-}
-
-
 
 /*---------------------OngletTwo---------------------------*/
 #ongletTwo {
     position: absolute;
     z-index: 1;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
@@ -363,6 +273,7 @@ cela ajustera mon contenu directement----------*/
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
+    margin-top: 40px;
 }
 
 #listFriends {
@@ -371,7 +282,7 @@ cela ajustera mon contenu directement----------*/
     margin-bottom: 1%;
     border-radius: 5px;
     border: solid white 1px;
-    background-color: #5b5b5b41;
+    background-color: rgba(255, 255, 255, 0.09);
 }
 
 .scroller {
@@ -414,7 +325,7 @@ cela ajustera mon contenu directement----------*/
     margin: 3%;
     border-radius: 5px;
     border: solid rgb(255, 255, 255) 1px;
-    background-color: #cbcbcb;
+    background-color: rgba(255, 255, 255, 0.09);
 }
 
 #photoFirends {
@@ -422,7 +333,7 @@ cela ajustera mon contenu directement----------*/
     width: 25%;
     margin-left: 2%;
     border-radius: 20%;
-    background-color: #5b5b5b;
+    background-color: rgba(255, 255, 255, 0.09);
 }
 
 #descriptFriends {
@@ -443,7 +354,7 @@ cela ajustera mon contenu directement----------*/
     margin-bottom: 1%;
     border-radius: 5px;
     border: solid white 1px;
-    background-color: #5b5b5b41;
+    background-color: rgba(255, 255, 255, 0.09);
 }
 
 .profilFriends {
@@ -463,6 +374,7 @@ cela ajustera mon contenu directement----------*/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 40px;
     height: 100%;
     width: 100%;
 }
@@ -488,7 +400,7 @@ cela ajustera mon contenu directement----------*/
     margin-bottom: 1%;
     border-radius: 5px;
     border: solid white 1px;
-    background-color: #5b5b5b41;
+    background-color: rgba(255, 255, 255, 0.09);
 }
 
 .avatarReglage {
@@ -496,7 +408,7 @@ cela ajustera mon contenu directement----------*/
     width: 200px;
     border-radius: 15%;
     background-image: url('#');
-    background-color: #cbcbcb;
+    background-color: rgba(255, 255, 255, .5);
     margin-right: 2%;
 }
 
@@ -517,12 +429,13 @@ cela ajustera mon contenu directement----------*/
     border-radius: 5px;
     margin-top: 5%;
     color: whitesmoke;
-    background-color: #3071ab96;
+    background-color: #ffffff85;
     border: solid whitesmoke 1px;
+    cursor: pointer;
 }
 
 .boutonReglage:hover {
-    background-color: #193c5a96;
+    background-color: #193c5a53;
 }
 
 #boiteReglageD {
@@ -546,8 +459,8 @@ cela ajustera mon contenu directement----------*/
     border: solid rgba(245, 245, 245, 0.53) 1px;
     border-radius: 3px;
     padding-left: 5%;
-    color: whitesmoke;
-    background-color: #37566988;
+    color: rgb(255, 255, 255);
+    background-color: hsla(0, 0%, 0%, 0.251);
 }
 
 .boutonF {
@@ -559,10 +472,11 @@ cela ajustera mon contenu directement----------*/
     border: solid rgba(245, 245, 245, 0.464) 1px;
     border-radius: 3px;
     color: whitesmoke;
-    background-color: #3071ab96;
+    background-color: #ffffff85;
     border: solid whitesmoke 1px;
+    cursor: pointer;
 }
 
 .boutonF:hover {
-    background-color: #366860;
+    background-color: #193c5a53;
 }
