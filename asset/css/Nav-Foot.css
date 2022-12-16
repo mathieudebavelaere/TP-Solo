@@ -1,24 +1,23 @@
 body {
-    background-color: #1f2428;
+    background-color: #aeaeae;
 }
 #navBar {
     display: flex;
     flex-direction: row;
     height: auto;
     width: 100%;
-    background-color: #37546b;
+    background-color: #424242;
 }
 
 #footer {
-
     height: 200px;
-    background-color: #1a3f4e;
+    background-color: #424242;
 }
 
 * {
     margin: 0%;
     padding: 0%;
-
+font-family:'Times New Roman', Times, serif;
 }
 
 /*--------------------------------------*/
@@ -36,7 +35,7 @@ body {
     justify-content: center;
     align-content: center;
     height: auto;
-    background-image: url('../img/backspace.jpeg');
+    background-image: url('../img/backFour.png');
     background-size: 100%;
 }
 
@@ -88,3 +87,21 @@ body {
 }
 
 /*-----------------------------------------*/
+
+#enter {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerEnter {
+    width: 50%;
+    height: 500px;
+    background-color: rgba(196, 196, 196, 0.5);
+    backdrop-filter: blur(5px);
+    border: solid white 1px;
+    border-radius: 5px;
+    
+}

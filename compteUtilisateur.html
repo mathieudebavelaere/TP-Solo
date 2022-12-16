@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./asset/css/Nav-Foot.css">
     <link rel="stylesheet" href="./asset/css/miniCard.css">
     <link rel="stylesheet" href="./asset/css/compteUtilisateur.css">
-<link rel="stylesheet" href="./asset/css/mobile.css">
+    <link rel="stylesheet" href="./asset/css/mobile.css">
     <title>Compte</title>
 </head>
 
@@ -19,7 +19,7 @@
             <input class="input" type="password" placeholder="mot de passe">
         </div>
 
-        <div id="boiteConex2"> 
+        <div id="boiteConex2">
             <a class="bouton" href="./pageJeux.html">
                 <p>Page Du jeux</p>
             </a>
@@ -37,36 +37,60 @@
     <!--------------------FinDeNavBar----------------------->
     <div id="corps">
         <div id="boitecontainer">
-        <!--------------------UserBox----------------------->
-        <div id="boxUser">
-            <div id="avatarUser"></div>
-            <div id="profilUser">
-                <p class="textUser">TiMateoHDSE</p><img id="psnPlus" src="./asset/img/psnplus.png"></img>
-                <div id="boiteBadge">
-                    <img id="badgeRecomp" src="./asset/img/platine.png" alt=""><p id="numberTrophée">1</p>
-                    <img id="badgeRecomp" src="./asset/img/or.png" alt=""><p id="numberTrophée">76</p>
-                    <img id="badgeRecomp" src="./asset/img/argent.png" alt=""><p id="numberTrophée">123</p>
-                    <img id="badgeRecomp" src="./asset/img/bronze.png" alt=""><p id="numberTrophée">348</p>
+            <!--------------------UserBox----------------------->
+            <div id="boxUser" class="skinFront1">
+                <div id="avatarUser"></div>
+                <div id="profilUser">
+                    <p class="textUser">TiMateoHDSE</p><img id="psnPlus" src="./asset/img/psnplus.png"></img>
+                    <div id="boiteBadge">
+                        <img id="badgeRecomp" src="./asset/img/platine.png" alt="">
+                        <p id="numberTrophée">1</p>
+                        <img id="badgeRecomp" src="./asset/img/or.png" alt="">
+                        <p id="numberTrophée">76</p>
+                        <img id="badgeRecomp" src="./asset/img/argent.png" alt="">
+                        <p id="numberTrophée">123</p>
+                        <img id="badgeRecomp" src="./asset/img/bronze.png" alt="">
+                        <p id="numberTrophée">348</p>
+                    </div>
+                </div>
+
+            </div>
+            <div id="boxHG" class="skinFrontHG1">
+
+                <!--------------------Card----------------------->
+                <div id="card">
+                    <div id="container">
+                        <p id="titleCard">God of War: Ragnarock</p>
+                        <img id="coverCard" src="./asset/img/bande2.png" alt="#">
+                        <div id="boiteCard">
+                            <div id="starsCard"></div>
+                            <div id="infoCard">
+                                <p>Page du jeu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--------------------Card----------------------->
+
+            </div>
+            <div id="compteGameUser" class="skinFront1">
+                <div id="boiteCompte">
+                    <div id="psn"></div>
+                    <p class="titlePsn">TiMateoHDSE</p>
+                </div>
+                <div id="boiteCompte">
+                    <div id="xbox"></div>
+                    <p class="titleXbox">Non Connectée</p>
+                </div>
+                <div id="boiteCompte">
+                    <div id="nintendo"></div>
+                    <p class="titleNintendo">Non Connectée</p>
+                </div>
+                <div id="boiteCompte">
+                    <div id="steam"></div>
+                    <p class="titleSteam">Non Connectée</p>
                 </div>
             </div>
-
-        </div>
-        <div id="boxHG">
-
-                                        <!--------------------Card----------------------->
-                                        <div id="card">
-                                            <div id="container">
-                                                <p id="titleCard">God of War: Ragnarock</p>
-                                                <img id="coverCard" src="./asset/img/bande2.png" alt="#">
-                                                <div id="boiteCard">
-                                                    <div id="starsCard"></div>
-                                                    <div id="infoCard"><p>Page du jeu</p></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--------------------Card----------------------->
-
-        </div>
         </div>
         <!--------------------UserBox----------------------->
         <div id="parentGame">
@@ -82,10 +106,11 @@
                 </div>
                 <div id="onglet4" class="onglet">Mon Profil</div>
 
-                <div id="boxGame">
+                <div id="boxGame" class="skinFront1">
                     <!--------------------ongletOne---------------------------------------------------------------------------->
-                    <div id="ongletOne" class="visible">
-
+                    <div id="ongletOne" class="visible scroller">
+                        <input id="searchGame" type="search" placeholder="Tapez votre recherche ici : Call Of Duty... ">
+                        <button class="searchGame">rechercher</button>
                         <div id="cardGame">
                             <!--------------------Card----------------------->
                             <div id="card">
@@ -94,7 +119,9 @@
                                     <img id="coverCard" src="./asset/img/bande2.png" alt="#">
                                     <div id="boiteCard">
                                         <div id="starsCard"></div>
-                                        <div id="infoCard"><p>Page du jeu</p></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +132,9 @@
                                     <img id="coverCard" src="./asset/img/bande1.jpg" alt="#">
                                     <div id="boiteCard">
                                         <div id="starsCard"></div>
-                                        <div id="infoCard"><p>Page du jeu</p></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +145,9 @@
                                     <img id="coverCard" src="./asset/img/bande3.png" alt="#">
                                     <div id="boiteCard">
                                         <div id="starsCard"></div>
-                                        <div id="infoCard"><p>Page du jeu</p></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -127,7 +158,9 @@
                                     <img id="coverCard" src="./asset/img/bande4.png" alt="#">
                                     <div id="boiteCard">
                                         <div id="starsCard"></div>
-                                        <div id="infoCard"><p>Page du jeu</p></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -139,201 +172,231 @@
                             <div class="catégorie">
                                 <p>Jeux en Cour</p>
                             </div>
-                                           <!--------------------Card----------------------->
-                                           <div id="card">
-                                            <div id="container">
-                                                <p id="titleCard">God of War: Ragnarock</p>
-                                                <img id="coverCard" src="./asset/img/bande2.png" alt="#">
-                                                <div id="boiteCard">
-                                                    <div id="starsCard"></div>
-                                                    <div id="infoCard"><p>Page du jeu</p></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--------------------Card----------------------->
-                                        <div id="card">
-                                            <div id="container">
-                                                <p id="titleCard">Call of Duty: Moderne Warfare 2</p>
-                                                <img id="coverCard" src="./asset/img/bande1.jpg" alt="#">
-                                                <div id="boiteCard">
-                                                    <div id="starsCard"></div>
-                                                    <div id="infoCard"><p>Page du jeu</p></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--------------------Card----------------------->
-                                        <div id="card">
-                                            <div id="container">
-                                                <p id="titleCard">NFS: Unbound</p>
-                                                <img id="coverCard" src="./asset/img/bande3.png" alt="#">
-                                                <div id="boiteCard">
-                                                    <div id="starsCard"></div>
-                                                    <div id="infoCard"><p>Page du jeu</p></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--------------------Card----------------------->
-                                        <div id="card">
-                                            <div id="container">
-                                                <p id="titleCard">The Callisto Protocol</p>
-                                                <img id="coverCard" src="./asset/img/bande4.png" alt="#">
-                                                <div id="boiteCard">
-                                                    <div id="starsCard"></div>
-                                                    <div id="infoCard"><p>Page du jeu</p></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                            </div>
-
-
-                            <div class="catégorie">
-                                <p>Jeux Terminer</p>
-                            </div>
-
                             <!--------------------Card----------------------->
-                  <!--------------------Card----------------------->
-                  <div id="card">
-                    <div id="container">
-                        <p id="titleCard">God of War: Ragnarock</p>
-                        <img id="coverCard" src="./asset/img/bande2.png" alt="#">
-                        <div id="boiteCard">
-                            <div id="starsCard"></div>
-                            <div id="infoCard"><p>Page du jeu</p></div>
+                            <div id="card">
+                                <div id="container">
+                                    <p id="titleCard">God of War: Ragnarock</p>
+                                    <img id="coverCard" src="./asset/img/bande2.png" alt="#">
+                                    <div id="boiteCard">
+                                        <div id="starsCard"></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div id="card">
+                                <div id="container">
+                                    <p id="titleCard">Call of Duty: Moderne Warfare 2</p>
+                                    <img id="coverCard" src="./asset/img/bande1.jpg" alt="#">
+                                    <div id="boiteCard">
+                                        <div id="starsCard"></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div id="card">
+                                <div id="container">
+                                    <p id="titleCard">NFS: Unbound</p>
+                                    <img id="coverCard" src="./asset/img/bande3.png" alt="#">
+                                    <div id="boiteCard">
+                                        <div id="starsCard"></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--------------------Card----------------------->
+                            <div id="card">
+                                <div id="container">
+                                    <p id="titleCard">The Callisto Protocol</p>
+                                    <img id="coverCard" src="./asset/img/bande4.png" alt="#">
+                                    <div id="boiteCard">
+                                        <div id="starsCard"></div>
+                                        <div id="infoCard">
+                                            <p>Page du jeu</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="catégorie">
+                            <p>Jeux Terminer</p>
+                        </div>
+
+                        <!--------------------Card----------------------->
+                        <!--------------------Card----------------------->
+                        <div id="card">
+                            <div id="container">
+                                <p id="titleCard">God of War: Ragnarock</p>
+                                <img id="coverCard" src="./asset/img/bande2.png" alt="#">
+                                <div id="boiteCard">
+                                    <div id="starsCard"></div>
+                                    <div id="infoCard">
+                                        <p>Page du jeu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--------------------Card----------------------->
+                        <div id="card">
+                            <div id="container">
+                                <p id="titleCard">Call of Duty: Moderne Warfare 2</p>
+                                <img id="coverCard" src="./asset/img/bande1.jpg" alt="#">
+                                <div id="boiteCard">
+                                    <div id="starsCard"></div>
+                                    <div id="infoCard">
+                                        <p>Page du jeu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--------------------Card----------------------->
+                        <div id="card">
+                            <div id="container">
+                                <p id="titleCard">NFS: Unbound</p>
+                                <img id="coverCard" src="./asset/img/bande3.png" alt="#">
+                                <div id="boiteCard">
+                                    <div id="starsCard"></div>
+                                    <div id="infoCard">
+                                        <p>Page du jeu</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--------------------Card----------------------->
+                        <div id="card">
+                            <div id="container">
+                                <p id="titleCard">The Callisto Protocol</p>
+                                <img id="coverCard" src="./asset/img/bande4.png" alt="#">
+                                <div id="boiteCard">
+                                    <div id="starsCard"></div>
+                                    <div id="infoCard">
+                                        <p>Page du jeu</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--------------------Card----------------------->
-                <div id="card">
-                    <div id="container">
-                        <p id="titleCard">Call of Duty: Moderne Warfare 2</p>
-                        <img id="coverCard" src="./asset/img/bande1.jpg" alt="#">
-                        <div id="boiteCard">
-                            <div id="starsCard"></div>
-                            <div id="infoCard"><p>Page du jeu</p></div>
-                        </div>
+                <!--------------------ongleThree---------------------------------------------------------------------------->
+                <div id="ongletThree" class="noVisible">
+                    <div class="titleFriends">
+                        <p>Liste d'amis</p>
                     </div>
+                    <div class="profilFriends">
+                        <p>Profiles</p>
+                    </div>
+                    <div id="listFriends" class="scroller">
+
+                        <!--------------->
+                        <div id="friends">
+                            <div id="photoFirends"></div>
+                            <div id="descriptFriends">
+                                <div class="boxFriends">Friends 1</div>
+                                <div class="boxFriends">Badges</div>
+                                <div class="boxFriends">Voir profil</div>
+                            </div>
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+                            <div id="photoFirends"></div>
+                            <div id="descriptFriends">
+                                <div class="boxFriends">Friends 2</div>
+                                <div class="boxFriends">Badges</div>
+                                <div class="boxFriends">Voir profil</div>
+                            </div>
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+                            <div id="photoFirends"></div>
+                            <div id="descriptFriends">
+                                <div class="boxFriends">Friends 3</div>
+                                <div class="boxFriends">Badges</div>
+                                <div class="boxFriends">Voir profil</div>
+                            </div>
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+                            <div id="photoFirends"></div>
+                            <div id="descriptFriends">
+                                <div class="boxFriends">Friends 4</div>
+                                <div class="boxFriends">Badges</div>
+                                <div class="boxFriends">Voir profil</div>
+                            </div>
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+                            <div id="photoFirends"></div>
+                            <div id="descriptFriends">
+                                <div class="boxFriends">Friends 5</div>
+                                <div class="boxFriends">Badges</div>
+                                <div class="boxFriends">Voir profil</div>
+                            </div>
+                        </div>
+                        <!--------------->
+                    </div>
+                    <div id="mainFriends"></div>
                 </div>
-                <!--------------------Card----------------------->
-                <div id="card">
-                    <div id="container">
-                        <p id="titleCard">NFS: Unbound</p>
-                        <img id="coverCard" src="./asset/img/bande3.png" alt="#">
-                        <div id="boiteCard">
-                            <div id="starsCard"></div>
-                            <div id="infoCard"><p>Page du jeu</p></div>
-                        </div>
+                <!--------------------ongletFour---------------------------------------------------------------------------->
+                <div id="ongletFour" class="noVisible">
+                    <div id="titleReglage">
+                        <p>Réglages</p>
                     </div>
-                </div>
-                <!--------------------Card----------------------->
-                <div id="card">
-                    <div id="container">
-                        <p id="titleCard">The Callisto Protocol</p>
-                        <img id="coverCard" src="./asset/img/bande4.png" alt="#">
-                        <div id="boiteCard">
-                            <div id="starsCard"></div>
-                            <div id="infoCard"><p>Page du jeu</p></div>
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
-                    <!--------------------ongleThree---------------------------------------------------------------------------->
-                    <div id="ongletThree" class="noVisible">
-                        <div class="titleFriends">
-                            <p>Liste d'amis</p>
-                        </div>
-                        <div class="profilFriends">
-                            <p>Profiles</p>
-                        </div>
-                        <div id="listFriends" class="scroller">
+                    <div id="boxReglage">
 
-                            <!--------------->
-                            <div id="friends">
-                                <div id="photoFirends"></div>
-                                <div id="descriptFriends">
-                                    <div class="boxFriends">Friends 1</div>
-                                    <div class="boxFriends">Badges</div>
-                                    <div class="boxFriends">Voir profil</div>
-                                </div>
-                            </div>
-                            <!--------------->
-                            <div id="friends">
-                                <div id="photoFirends"></div>
-                                <div id="descriptFriends">
-                                    <div class="boxFriends">Friends 2</div>
-                                    <div class="boxFriends">Badges</div>
-                                    <div class="boxFriends">Voir profil</div>
-                                </div>
-                            </div>
-                            <!--------------->
-                            <div id="friends">
-                                <div id="photoFirends"></div>
-                                <div id="descriptFriends">
-                                    <div class="boxFriends">Friends 3</div>
-                                    <div class="boxFriends">Badges</div>
-                                    <div class="boxFriends">Voir profil</div>
-                                </div>
-                            </div>
-                            <!--------------->
-                            <div id="friends">
-                                <div id="photoFirends"></div>
-                                <div id="descriptFriends">
-                                    <div class="boxFriends">Friends 4</div>
-                                    <div class="boxFriends">Badges</div>
-                                    <div class="boxFriends">Voir profil</div>
-                                </div>
-                            </div>
-                            <!--------------->
-                            <div id="friends">
-                                <div id="photoFirends"></div>
-                                <div id="descriptFriends">
-                                    <div class="boxFriends">Friends 5</div>
-                                    <div class="boxFriends">Badges</div>
-                                    <div class="boxFriends">Voir profil</div>
-                                </div>
-                            </div>
-                            <!--------------->
-                        </div>
-                        <div id="mainFriends"></div>
-                    </div>
-                    <!--------------------ongletFour---------------------------------------------------------------------------->
-                    <div id="ongletFour" class="noVisible">
-                        <div id="titleReglage">
-                            <p>Réglages</p>
-                        </div>
-                        <div id="boxReglage">
+                        <div id="boiteReglageG">
+                            <div class="avatarReglage"></div>
+                            <button class="boutonReglage">
+                                <p>Changer d'avatar</p>
+                            </button>
 
-                            <div id="boiteReglageG">
-                                <div class="avatarReglage"></div>
-                                <button class="boutonReglage"><p>Changer d'avatar</p></button>
+                            <h2 class="titleSkin">Thèmes</h2>
+                            <div id="boiteSkin">
+                                <div id="skin1"></div>
+                                <div id="skin2"></div>
+                                <div id="skin3"></div>
+                                <div id="skin4"></div>
                             </div>
 
-
-                            <div id="boiteReglageD">
-                                <div class="profilReglage">
-                                    <input id="firstName" required class="box" type="text" placeholder="Nom">
-                                    <input id="lastName" required class="box" type="text" placeholder="Prénom">
-                                    <input id="birthDay" required class="box" type="Date" id="Birthday">
-                                    <input id="eMail" required class="box" type="mail" placeholder="e-mail">
-                                    <input id="passWord" required class="box" type="password" placeholder="Mot de passe">
-                                    <input id="confPassWord" required class="box" type="password" placeholder="Confirmation de mot de passe">
-                                    <button id="validateFormulaire" type="submit" class="boutonF"><p>Valider les Modifications</p></button>
-                                </div>
-                            </div>
-
-
                         </div>
+
+
+                        <div id="boiteReglageD">
+                            <div class="profilReglage">
+                                <input id="firstName" required class="box" type="text" placeholder="Nom">
+                                <input id="lastName" required class="box" type="text" placeholder="Prénom">
+                                <input id="birthDay" required class="box" type="Date" id="Birthday">
+                                <input id="eMail" required class="box" type="mail" placeholder="e-mail">
+                                <input id="passWord" required class="box" type="password" placeholder="Mot de passe">
+                                <input id="confPassWord" required class="box" type="password"
+                                    placeholder="Confirmation de mot de passe">
+                                <button id="validateFormulaire" type="submit" class="boutonF">
+                                    <p>Valider les Modifications</p>
+                                </button>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <!------------------------Footer------------------------->
-        <footer id="footer">
+    </div>
+    <!------------------------Footer------------------------->
+    <footer id="footer">
 
-        </footer>
-        <!---------------------FinDeFooter----------------------->
-        <script src="./asset/js/onglet.js"></script>
-        <script src="./asset/js/gameCard.js"></script>
+    </footer>
+    <!---------------------FinDeFooter----------------------->
+    <script src="./asset/js/onglet.js"></script>
+    <script src="./asset/js/skin.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,8 @@
 #corps {
     flex-direction: column;
     align-items: center;
-    background-image: url('#');
+    background-color: #272727;
+    background-image: url(#);
 }
 
 
@@ -10,11 +11,10 @@ cela ajustera mon contenu directement----------*/
 #parentGame {
     position: relative;
     margin-top: 20px;
-    height: 550px;
+    height: 50vw;
     width: 100%;
     margin-bottom: 3%;
 }
-
 
 #boxGame {
     position: absolute;
@@ -22,9 +22,7 @@ cela ajustera mon contenu directement----------*/
     height: 100%;
     width: 100%;
     border: solid rgb(255, 255, 255) 1px;
-    background-image: url('../img/backspace.jpeg');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
@@ -46,7 +44,7 @@ cela ajustera mon contenu directement----------*/
     margin-top: 20px;
     border: solid rgb(255, 255, 255) 1px;
     border-radius: 5px;
-    background-color: rgba(240, 248, 255, 0.279);
+    background-color: rgba(176, 176, 176, 0.279);
     transition: 0.5s;
     cursor: pointer;
 }
@@ -55,6 +53,7 @@ cela ajustera mon contenu directement----------*/
     margin-top: 10px;
     transition: 0.5s;
     color: #b18302;
+    font-size: 20px;
     background-color: rgba(255, 255, 255, 0.863);
 }
 
@@ -72,6 +71,7 @@ cela ajustera mon contenu directement----------*/
 .ongletOpen {
     height: 30%;
     width: 20%;
+    font-size: 20px;
     text-align: center;
     border-radius: 5px;
     border: solid rgb(255, 255, 255) 1px;
@@ -89,13 +89,16 @@ cela ajustera mon contenu directement----------*/
     margin-left: 60px;
     border-radius: 5px;
 }
+
 #boitecontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     width: 100%;
 }
+
 /*----------------------------UserBox-------------------------------*/
 #boxUser {
     display: flex;
@@ -103,11 +106,11 @@ cela ajustera mon contenu directement----------*/
     align-items: center;
     padding: 1%;
     margin-right: 2%;
+    margin-bottom: 2%;
     height: 200px;
     width: 70%;
     border: solid rgb(255, 255, 255) 1px;
     border-radius: 10px;
-    background-image: url('../img/backspace.jpeg');
 }
 
 #avatarUser {
@@ -117,11 +120,13 @@ cela ajustera mon contenu directement----------*/
     background-image: url('../img/koopa.png');
     background-size: 100%;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
     border: solid whitesmoke 1px
 }
+
 #psnPlus {
-height: 30px;
-margin-left: 10%;
+    height: 30px;
+    margin-left: 10%;
 }
 
 #profilUser {
@@ -152,11 +157,16 @@ margin-left: 10%;
     justify-content: center;
     flex-direction: row;
     margin-left: 5%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
 }
+
 #numberTrophée {
     color: whitesmoke;
     margin-right: 2%;
 }
+
 #badgeRecomp {
     height: 40px;
     width: 40px;
@@ -170,7 +180,6 @@ margin-left: 10%;
     justify-content: center;
     height: 100%;
     width: 20%;
-
 }
 
 .cardBUser {
@@ -195,6 +204,91 @@ margin-left: 10%;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
 }
+
+/*------------------------------*/
+#compteGameUser {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    padding: 1%;
+    margin-right: 27%;
+    margin-top: -6%;
+    height: 45px;
+    width: 71%;
+    border: solid rgb(255, 255, 255) 1px;
+    border-radius: 10px;
+}
+
+#boiteCompte {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    border-radius: 15px;
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.356);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#boiteCompte:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: #c5c5c5 0px 0px 5px;
+    transition: 0.5s;
+}
+
+#psn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 15%;
+    background-image: url('../img/psnNonValide.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#xbox {
+    height: 40px;
+    width: 40px;
+    border-radius: 15%;
+    background-image: url('../img/xboxNonValide.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.titlePsn,
+.titleXbox,
+.titleNintendo,
+.titleSteam {
+    font-size: 15px;
+    color: whitesmoke;
+}
+
+#nintendo {
+    height: 40px;
+    width: 40px;
+    border-radius: 15%;
+    background-image: url('../img/nintendoNonValide.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#steam {
+    height: 40px;
+    width: 40px;
+    border-radius: 15%;
+    background-image: url('../img/steamNonValide.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*------------------------------*/
 /*----------------------------historiqueGame-------------------------------*/
 #boxHG {
     display: flex;
@@ -205,7 +299,6 @@ margin-left: 10%;
     width: 250px;
     border: solid rgb(255, 255, 255) 1px;
     border-radius: 10px;
-    background-image: url('../img/backspace.jpeg');
 }
 
 /*----------------------------historiqueGame-------------------------------*/
@@ -221,13 +314,53 @@ margin-left: 10%;
     width: 100%;
 }
 
+#ongletOne::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+#ongletOne::-webkit-scrollbar-thumb {
+
+    background-color: rgb(221, 221, 221);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid rgba(56, 56, 56, 0);
+    /* creates padding around scroll thumb */
+}
+
+#searchGame {
+    font-size: 20px;
+    height: 30px;
+    width: 70%;
+    color: whitesmoke;
+    background-color: #272727;
+    border: none;
+    border: solid whitesmoke;
+    border-radius: 5px;
+}
+.searchGame {
+    font-size: 20px;
+    height: 30px;
+    width: 10%;
+    margin-left: 10px;
+    color: whitesmoke;
+    background-color: #272727;
+    border: none;
+    border: solid whitesmoke;
+    border-radius: 5px;
+}
+.searchGame:hover {
+    background-color: #4d4d4d;
+}
+
 /*----------------------------CardGame------------------------------*/
 
 #cardGame {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
-    margin: 2%;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
 }
 
@@ -241,7 +374,6 @@ margin-left: 10%;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
-
 }
 
 .scroller {
@@ -404,8 +536,8 @@ margin-left: 10%;
 }
 
 .avatarReglage {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 15%;
     background-image: url('#');
     background-color: rgba(255, 255, 255, .5);
@@ -435,20 +567,20 @@ margin-left: 10%;
 }
 
 .boutonReglage:hover {
-    background-color: #193c5a53;
+    background-color: #31313153;
 }
 
 #boiteReglageD {
     height: 100%;
     width: 60%;
-    margin: 5%;
+    margin: 0%;
 }
 
 .profilReglage {
     display: flex;
     flex-direction: column;
-   align-items: center;
-   margin-top: 5%;
+    align-items: center;
+    margin-top: 15%;
 }
 
 .box {
@@ -478,5 +610,92 @@ margin-left: 10%;
 }
 
 .boutonF:hover {
-    background-color: #193c5a53;
+    background-color: #31313153;
+}
+.titleSkin {
+    color: whitesmoke;
+    margin-top: 10px;
+    font-size: 20px;
+}
+#boiteSkin {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 150px;
+}
+
+#skin1,
+#skin2,
+#skin3,
+#skin4 {
+    height: 30%;
+    width: 155px;
+    margin: 5px;
+    border: solid whitesmoke 1px;
+    border-radius: 5px;
+}
+#skin1 {
+    background-image: url('../img/backFour.png');
+    background-size: 250% ;
+}
+#skin2 {
+    background-image: url('../img/backTwo.png');
+    background-size: 100% ;
+}
+#skin3 {
+    background-image: url('../img/backThree.png');
+    background-size: 250% ;
+}
+#skin4 {
+    background-image: url('../img/backOne.png');
+    background-size: 250% ;
+}
+
+/*-----------------Skin----------------*/
+.skinFront1 {
+    background-image: url('../img/backFour.png');
+    background-size: 100%;
+    transition: 0.5s;
+}
+
+.skinFrontHG1 {
+    background-image: url('../img/backFour.png');
+    background-size: 300%;
+    transition: 0.5s;
+}
+
+.skinFront2 {
+    background-image: url('../img/backTwo.png');
+    background-size: 100%;
+    transition: 0.5s;
+}
+
+.skinFrontHG2 {
+    background-image: url('../img/backTwo.png');
+    background-size: 300%;
+    transition: 0.5s;
+}
+.skinFront3 {
+    background-image: url('../img/backThree.png');
+    background-size: 100%;
+    transition: 0.5s;
+}
+
+.skinFrontHG3 {
+    background-image: url('../img/backThree.png');
+    background-size: 300%;
+    transition: 0.5s;
+}
+.skinFront4 {
+    background-image: url('../img/backOne.png');
+    background-size: 100%;
+    transition: 0.5s;
+}
+
+.skinFrontHG4 {
+    background-image: url('../img/backOne.png');
+    background-size: 300%;
+    transition: 0.5s;
 }
