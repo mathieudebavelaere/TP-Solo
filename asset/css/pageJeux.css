@@ -1,4 +1,3 @@
-@media all and (min-width: 768px) {
 
     #corps {
         flex-direction: column;
@@ -77,16 +76,14 @@
         margin-bottom: 2%;
     }
 
-}
-
-@media all and (max-width: 767px) {
-
+@media all and (max-width: 1024px) { 
 
     #BoiteGame {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         height: auto;
         margin-top: 10px;
         height: auto;
@@ -122,14 +119,14 @@
         justify-content: center;
         margin-top: 3%;
         width: 90%;
-        height: auto;
+        height: 90px;
         border: solid whitesmoke 1px;
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.147);
     }
 
     .imgBox {
-        height: 80px;
+        height: 120px;
     }
 
     .textBox {
@@ -142,12 +139,12 @@
     }
 
     .textBox1 {
-        font-size: 18px;
+        font-size: 30px;
         color: whitesmoke;
     }
 
     .textBox2 {
-        font-size: 13px;
+        font-size: 20px;
         color: rgb(215, 215, 215);
         margin-bottom: 2%;
     }
