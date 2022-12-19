@@ -28,8 +28,9 @@ h1 {
     height:100%;
     width: 100%;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(19, 19, 19, 0.591);
     backdrop-filter: blur(5px);
+    border: solid rgb(188, 116, 0) 0.5px;
 }
 .box {
     height: 43px;
@@ -54,6 +55,7 @@ h1 {
     padding-right: 70%;
     transition: 0.3s;
 }
+
 .textS {
     position: absolute;
     z-index: 2;

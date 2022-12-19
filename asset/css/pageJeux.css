@@ -1,107 +1,102 @@
-#corps {
-    flex-direction: column;
-    align-items: center;
+@media all and (min-width: 768px) {
+
+    #corps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #BoiteGame {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 10px;
+        height: auto;
+        width: 100%;
+        border: solid whitesmoke 0.5px;
+        background-image: url('../img/backFour.png');
+        background-size: 100%;
+        border-radius: 5px;
+    }
+
+    #voletG {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 30%;
+    }
+
+    #boitePrésentation {
+        margin: 10%;
+    }
+
+    #voletD {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .trophées {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 4%;
+        height: 65px;
+        width: 90%;
+        border: solid whitesmoke 0.5px;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.147);
+    }
+
+    .imgBox {
+        height: 100px;
+    }
+
+    .textBox {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 5%;
+        width: 60%;
+        list-style-type: none;
+    }
+
+    .textBox1 {
+        font-size: 20px;
+        color: whitesmoke;
+    }
+
+    .textBox2 {
+        font-size: 15px;
+        color: rgb(215, 215, 215);
+        margin-bottom: 2%;
+    }
+
 }
 
-#BoiteGame {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 10px;
-    height: auto;
-    width: 100%;
-    border: solid rgb(255, 255, 255) 1px;
-    background-image: url('../img/backspace.jpeg');
-    background-size: 100%;
-    border-radius: 5px;
-}
+@media all and (max-width: 767px) {
 
-#voletG {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-    height: 100%;
-    width: 30%;
-}
-
-#boitePrésentation {
-    margin: 10%;
-}
-
-#voletD {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
-.scroller {
-    overflow-y: scroll;
-}
-
-#voletD::-webkit-scrollbar {
-    width: 10px;
-    /* width of the entire scrollbar */
-}
-
-#voletD::-webkit-scrollbar-thumb {
-
-    background-color: rgb(221, 221, 221);
-    /* color of the scroll thumb */
-    border-radius: 20px;
-    /* roundness of the scroll thumb */
-    border: 3px solid rgba(56, 56, 56, 0);
-    /* creates padding around scroll thumb */
-}
-.trophées {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: 4%;
-    height: 12%;
-    width: 90%;
-    border: solid whitesmoke 1px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.147);
-}
-
-.imgBox {
-    height: 100px;
-}
-
-.textBox {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 5%;
-    width: 60%;
-    list-style-type: none;
-}
-
-.textBox1 {
-    font-size: 20px;
-    color: whitesmoke;  
-}
-
-.textBox2 {
-    font-size: 15px;
-    color: rgb(215, 215, 215);
-    margin-bottom: 2%;
-}
-
-@media all and (max-width: 768px) {
 
     #BoiteGame {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        justify-content: space-between;
         height: auto;
+        margin-top: 10px;
+        height: auto;
+        width: 100%;
+        border: solid whitesmoke 0.5px;
+        background-image: url('../img/backFour.png');
+        background-size: 100%;
+        border-radius: 5px;
     }
+
     #voletG {
         display: flex;
         flex-direction: column;
@@ -110,6 +105,16 @@
         height: 100%;
         width: 40%;
     }
+
+    #voletD {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
     .trophées {
         display: flex;
         flex-direction: row;
@@ -122,9 +127,11 @@
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 0.147);
     }
+
     .imgBox {
         height: 80px;
     }
+
     .textBox {
         display: flex;
         align-items: flex-start;
@@ -133,10 +140,12 @@
         width: 60%;
         list-style-type: none;
     }
+
     .textBox1 {
         font-size: 18px;
-        color: whitesmoke;  
+        color: whitesmoke;
     }
+
     .textBox2 {
         font-size: 13px;
         color: rgb(215, 215, 215);
