@@ -1,7 +1,6 @@
 #corps {
     flex-direction: column;
     align-items: center;
-    background-color: #1c1c1c;
     background-image: url(#);
 }
 
@@ -207,10 +206,15 @@ cela ajustera mon contenu directement----------*/
 
 /*------------------------------*/
 #compteGameUser {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
+    flex-direction: row;
+    padding: 1%;
+    margin-right: 27%;
+    margin-top: -6%;
+    height: 45px;
     width: 70%;
     border: solid rgb(188, 116, 0) 0.5px;
     border-radius: 10px;
@@ -231,7 +235,7 @@ cela ajustera mon contenu directement----------*/
 
 #boiteCompte:hover {
     background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: rgb(157, 112, 21) 0px 0px 5px;
+    box-shadow: #c5c5c5 0px 0px 5px;
     transition: 0.5s;
 }
 
@@ -566,7 +570,7 @@ cela ajustera mon contenu directement----------*/
 
 .boutonReglage:hover {
     background-color: #31313153;
-    box-shadow: rgb(157, 112, 21) 0px 0px 5px;
+    border: solid rgb(188, 116, 0) 0.5px;
     transition: 0.5s;
 }
 
