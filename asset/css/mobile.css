@@ -1,6 +1,13 @@
 @media all and (max-width: 1024px) {
     body {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    #corps {
         padding: 0%;
         margin: 0%;
     }
@@ -11,29 +18,29 @@
         z-index: 5;
         display: flex;
         flex-direction: row;
-        height: auto;
         background-color: #4242424c;
     }
 
     #logo {
         display: none;
     }
+
     #boiteConex {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
     }
-    
+
     #boiteConex2 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
     }
+
     .bouton {
         text-decoration: none;
         height: 20px;
         margin: 0.2%;
-        width: 100%;
         font-size: 90%;
         justify-content: center;
         text-align: center;
@@ -42,11 +49,11 @@
         color: whitesmoke;
         background-color: #ffffff85;
     }
-    
+
     .bouton:hover {
         background-color: #193c5a53;
     }
-    
+
     .input {
         height: 20px;
         margin: 0.1%;
@@ -57,25 +64,18 @@
         color: whitesmoke;
         background-color: #ffffff2b;
     }
-    
+
     ::placeholder {
         color: rgba(255, 255, 255, 0.506);
     }
+
     #footer {
         height: 100px;
-        width: auto;
         margin-top: 500px;
         margin-bottom: 90px;
         background-color: #787878;
     }
-    #corps {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0%;
-        margin: 0%;
-       
-    }
+
 
 
     /*--------Pour agrandire mon contenu de ma boxGame je modifie la hauteur de ma div 'parentGame' directment 
@@ -83,16 +83,13 @@ cela ajustera mon contenu directement----------*/
     #parentGame {
         position: relative;
         height: 100vw;
-        width: 100%;
         margin-bottom: 3%;
     }
 
     #boxGame {
         position: absolute;
         margin-top: 60px;
-        height: 200%;
-        width: 100%;
-        border: solid rgb(255, 255, 255) 1px;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 5px;
     }
@@ -100,7 +97,6 @@ cela ajustera mon contenu directement----------*/
     #BlocOnglet {
         z-index: 1;
         height: 100%;
-        width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
@@ -108,11 +104,10 @@ cela ajustera mon contenu directement----------*/
 
     .onglet {
         height: 30%;
-        width: 25%;
+        width: 30%;
         text-align: center;
         color: whitesmoke;
         margin-top: 20px;
-        border: solid rgb(255, 255, 255) 1px;
         border-radius: 5px;
         background-color: rgba(176, 176, 176, 0.279);
         transition: 0.5s;
@@ -120,10 +115,9 @@ cela ajustera mon contenu directement----------*/
     }
 
     .onglet:hover {
-        margin-top: 10px;
+        margin-top: 5px;
         transition: 0.5s;
         color: #b18302;
-        font-size: 20px;
         background-color: rgba(255, 255, 255, 0.863);
     }
 
@@ -145,18 +139,18 @@ cela ajustera mon contenu directement----------*/
     .ongletOpen {
         height: 30%;
         width: 20%;
-        font-size: 20px;
+        font-size: 100%;
         text-align: center;
         border-radius: 5px;
-        border: solid rgb(255, 255, 255) 1px;
         margin-top: 10px;
         color: rgb(177, 131, 2);
         background-color: rgba(255, 255, 255, 0.863);
     }
 
     .catégorie {
+        display: none;
         color: whitesmoke;
-        font-size: 30px;
+        font-size: 100%;
         text-align: center;
         width: 90%;
         margin: 1%;
@@ -167,23 +161,22 @@ cela ajustera mon contenu directement----------*/
     #boitecontainer {
         display: flex;
         flex-direction: row;
-        width: 100%;
+        height: auto;
     }
 
     /*----------------------------UserBox-------------------------------*/
     #boxUser {
+        margin: 0%;
+        width: 100%;
         display: flex;
         align-items: center;
-        height: auto;
-        width: 100%;
         border: solid rgb(188, 116, 0) 0.5px;
         border-radius: 0%;
     }
 
     #avatarUser {
-        height: 50px;
-        width: 60px;
-        margin-left: 5%;
+        height: 200px;
+        width: 200px;
         border-radius: 15%;
         background-image: url('../img/koopa.png');
         background-size: 100%;
@@ -192,21 +185,21 @@ cela ajustera mon contenu directement----------*/
     }
 
     #psnPlus {
-        height: 15px;
-        margin-left: 5%;
+        height: 30px;
+        margin-left: 10px;
     }
 
     #profilUser {
         display: flex;
         align-items: flex-start;
-        justify-content: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .textUser {
         color: whitesmoke;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .badgeUser {
@@ -235,7 +228,7 @@ cela ajustera mon contenu directement----------*/
         justify-content: center;
         height: 20px;
         width: 20px;
-        margin: 10px;
+        margin: 5px;
     }
 
     #cardUser {
@@ -253,7 +246,7 @@ cela ajustera mon contenu directement----------*/
         flex-wrap: wrap;
         height: 200px;
         width: 170px;
-        padding: 5px;
+        padding: 1px;
         border-radius: 15px;
         border: solid #eeaf02 1px;
         background-color: #a2a2a2;
@@ -271,18 +264,25 @@ cela ajustera mon contenu directement----------*/
 
     /*------------------------------*/
     #compteGameUser {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        padding: 0%;
+        margin-right: 0%;
+        margin-top: 1%;
+        height: 100px;
         width: 100%;
-        height: 50px;
-        margin-top: 3%;
-        border-radius: 0px;
+        border: solid rgb(188, 116, 0) 0.5px;
+        border-radius: 0%;
     }
 
     #boiteCompte {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        width: 35%;
+        width: 40%;
         border-radius: 15px;
         background-color: rgba(0, 0, 0, 0.356);
         cursor: pointer;
@@ -295,11 +295,19 @@ cela ajustera mon contenu directement----------*/
         transition: 0.5s;
     }
 
+    .titlePsn,
+    .titleXbox,
+    .titleNintendo,
+    .titleSteam {
+        font-size: 15px;
+        color: whitesmoke;
+    }
+
     #psn {
         display: flex;
         justify-content: space-evenly;
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         border-radius: 15%;
         background-image: url('../img/psnNonValide.png');
         background-size: 100%;
@@ -309,27 +317,19 @@ cela ajustera mon contenu directement----------*/
     #xbox {
         display: flex;
         justify-content: space-evenly;
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         border-radius: 15%;
         background-image: url('../img/xboxNonValide.png');
         background-size: 100%;
         background-repeat: no-repeat;
     }
 
-    .titlePsn,
-    .titleXbox,
-    .titleNintendo,
-    .titleSteam {
-        font-size: 15px;
-        color: whitesmoke;
-    }
-
     #nintendo {
         display: flex;
         justify-content: space-evenly;
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         border-radius: 15%;
         background-image: url('../img/nintendoNonValide.png');
         background-size: 100%;
@@ -339,27 +339,50 @@ cela ajustera mon contenu directement----------*/
     #steam {
         display: flex;
         justify-content: space-evenly;
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 50px;
         border-radius: 15%;
         background-image: url('../img/steamNonValide.png');
         background-size: 100%;
         background-repeat: no-repeat;
     }
 
-    /*------------------------------*/
-    /*----------------------------historiqueGame-------------------------------*/
     #boxHG {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        height: 100px;
+        height: 200px;
         width: 100%;
         margin-top: 1%;
+        padding: 0%;
         border-radius: 0px;
     }
 
-    /*----------------------------historiqueGame-------------------------------*/
+    #searchGame {
+        font-size: 20px;
+        height: 70%;
+        width: 60%;
+        color: whitesmoke;
+        background-color: #272727;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .searchGame {
+        font-size: 20px;
+        height: 70%;
+        width: 30%;
+        margin-left: 10px;
+        color: whitesmoke;
+        background-color: #272727;
+        border: none;
+        border: solid whitesmoke 0.5px;
+        border-radius: 5px;
+    }
+
+    .searchGame:hover {
+        background-color: #4d4d4d;
+    }
     /*----------------------------OngletOne-------------------------------*/
     #ongletOne {
         position: absolute;
@@ -387,31 +410,6 @@ cela ajustera mon contenu directement----------*/
         /* creates padding around scroll thumb */
     }
 
-    #searchGame {
-        font-size: 20px;
-        height: 30px;
-        width: 60%;
-        color: whitesmoke;
-        background-color: #272727;
-        border: none;
-        border-radius: 5px;
-    }
-
-    .searchGame {
-        font-size: 20px;
-        height: 30px;
-        width: 30%;
-        margin-left: 10px;
-        color: whitesmoke;
-        background-color: #272727;
-        border: none;
-        border: solid whitesmoke 0.5px;
-        border-radius: 5px;
-    }
-
-    .searchGame:hover {
-        background-color: #4d4d4d;
-    }
 
     /*----------------------------CardGame------------------------------*/
 
@@ -719,6 +717,12 @@ cela ajustera mon contenu directement----------*/
     }
 
     /*-----------------Skin----------------*/
+    .boxSearch {
+        background-image: url('../img/backFour.png');
+        background-size: 100%;
+        transition: 0.5s;
+    }
+
     .skinFront1 {
         background-image: url('../img/backFour.png');
         background-size: 100%;
