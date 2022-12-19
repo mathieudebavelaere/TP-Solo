@@ -4,7 +4,12 @@ h1 {
     margin-bottom: 5%;
     font-size: 30px;
 }
-
+#corps {
+    height: 1820px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .boiteBox {
     display: flex;
     flex-direction: column;
@@ -17,7 +22,6 @@ h1 {
     text-align: center;
     border-radius: 5px;
     color: whitesmoke;
-    
 }
 
 #boiteBoxBlur{
@@ -291,3 +295,285 @@ h1 {
     background-color: #6e6e6e85;
     
 }
+
+@media all and (max-width: 1024px) {
+
+    .boiteBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 1000px;
+        width: 800px;
+        font-size: 70%;
+        text-align: center;
+        border-radius: 5px;
+        color: whitesmoke;
+    }
+    .box {
+        height: 43px;
+        width: 93%;
+        font-size: 13px;
+        border: solid rgba(245, 245, 245, 0.53) 1px;
+        border-radius: 3px;
+        padding-left: 5%;
+        color: whitesmoke;
+        background-color: #ffffff88;
+    }
+    
+    .textL {
+        position: absolute;
+        z-index: 2;
+        font-size: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 5px;
+        color: rgb(177, 177, 177);
+        margin: 0%;
+        margin-left: 2%;
+        padding-right: 70%;
+        transition: 0.3s;
+    }
+    
+    .textS {
+        position: absolute;
+        z-index: 2;
+        font-size: 20px;
+        margin-bottom: 8%;
+        background-color: rgb(243, 243, 243);
+        padding: 1%;
+        color: rgb(177, 177, 177);
+        margin-left: 2%;
+        transition: 0.3s;
+    }
+    /*-------------------FirstName---------------------*/
+    #blockFirstName {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 88px;
+        width: 520px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 5px;
+        border: solid rgba(65, 65, 65, 0.426) 2px;
+        margin-bottom: 2.5%;
+    }
+    
+    #firstName {
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        height: 30px;
+        margin-bottom: 1%;
+        margin-left: 2%;
+        background-color: rgb(243, 243, 243);
+        width: 95%;
+    }
+    /*-------------------FirstName---------------------*/
+    /*-------------------LastName---------------------*/
+    #blockLastName {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 88px;
+        width: 520px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 5px;
+        border: solid rgba(65, 65, 65, 0.426) 2px;
+        margin-bottom: 2.5%;
+    }
+    
+    #lastName {
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        height: 30px;
+        margin-bottom: 1%;
+        margin-left: 1.5%;
+        background-color: rgb(243, 243, 243);
+        width: 95%;
+    }
+    /*-------------------LastName---------------------*/
+    /*-------------------BirthDay---------------------*/
+    #blockBirthDay {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 88px;
+        width: 520px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 5px;
+        border: solid rgba(65, 65, 65, 0.426) 2px;
+        margin-bottom: 2.5%;
+    }
+    
+    #birthDay {
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        height: 30px;
+        margin-bottom: 1%;
+        margin-left: 1.5%;
+        background-color: rgb(243, 243, 243);
+        width: 95%;
+    }
+    .textBL {
+        position: absolute;
+        z-index: 2;
+        font-size: 30px;
+        background-color: rgba(243,243,243);
+        border-radius: 5px;
+        color: rgb(177, 177, 177);
+        margin: 0%;
+        margin-left: 2%;
+        padding-right: 80%;
+        transition: 0.3s;
+    }
+    .textBS {
+        position: absolute;
+        z-index: 2;
+        font-size: 20px;
+        margin-bottom: 8%;
+        background-color: rgb(243, 243, 243);
+        padding: 1%;
+        color: rgb(177, 177, 177);
+        margin-left: 2%;
+        transition: 0.3s;
+    }
+    /*------------------BirthDay---------------------*/
+    /*-------------------Mails---------------------*/
+    #blockMails {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 88px;
+        width: 520px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 5px;
+        border: solid rgba(65, 65, 65, 0.426) 2px;
+        margin-bottom: 2.5%;
+    }
+    
+    #mails {
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        height: 30px;
+        margin-bottom: 1%;
+        margin-left: 1.5%;
+        background-color: rgb(243, 243, 243);
+        width: 95%;
+    }
+    /*-------------------Mails---------------------*/
+    /*-------------------PassWord---------------------*/
+    #blockPassWord {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 88px;
+        width: 520px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 5px;
+        border: solid rgba(65, 65, 65, 0.426) 2px;
+        margin-bottom: 2.5%;
+    }
+    
+    #passWord {
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        height: 30px;
+        margin-bottom: 1%;
+        margin-left: 1.5%;
+        background-color: rgb(243, 243, 243);
+        width: 95%;
+    }
+    /*------------------PassWord---------------------*/
+    
+    /*-------------------ConfPassWord---------------------*/
+    #blockConfPassWord {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 88px;
+        width: 520px;
+        background-color: rgb(243, 243, 243);
+        border-radius: 5px;
+        border: solid rgba(65, 65, 65, 0.426) 2px;
+        margin-bottom: 2.5%;
+    }
+    
+    #confPassWord {
+        position: absolute;
+        z-index: 1;
+        text-decoration: none;
+        border: none;
+        height: 30px;
+        margin-bottom: 1%;
+        margin-left: 1.5%;
+        background-color: rgb(243, 243, 243);
+        width: 95%;
+    }
+    /*-------------------ConfPassWord---------------------*/
+    
+    .textPWL {
+        position: absolute;
+        z-index: 2;
+        font-size: 30px;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 5px;
+        color: rgb(177, 177, 177);
+        margin: 0%;
+        margin-left: 2%;
+        transition: 0.3s;
+    }
+    .textPWS {
+        position: absolute;
+        z-index: 2;
+        font-size: 20px;
+        margin-bottom: 8%;
+        background-color: rgb(243, 243, 243);
+        padding: 1%;
+        color: rgb(177, 177, 177);
+        margin-left: 2%;
+        transition: 0.3s;
+    }
+    /*-------------------BTN-Valider--------------------*/
+    
+    #validateFormulaire {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        height: 88px;
+        width: 520px;
+        color: whitesmoke;
+        background-color: #ffffff53;
+        border-radius: 5px;
+        border: solid rgba(65, 65, 65, 0.426) 2px;
+        margin-top: 5%;
+        cursor: pointer;
+    }
+    
+    #validateFormulaire:hover {
+        background-color: #6e6e6e85;
+        
+    }
+ }

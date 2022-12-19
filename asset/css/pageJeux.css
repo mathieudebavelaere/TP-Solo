@@ -11,7 +11,7 @@
         margin-top: 10px;
         height: auto;
         width: 100%;
-        border: solid whitesmoke 0.5px;
+        border: solid rgb(188, 116, 0) 0.5px;
         background-image: url('../img/backFour.png');
         background-size: 100%;
         border-radius: 5px;
@@ -22,6 +22,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+        margin-top: 5%;
         height: 100%;
         width: 30%;
     }
@@ -47,9 +48,9 @@
         margin: 4%;
         height: 65px;
         width: 90%;
-        border: solid whitesmoke 0.5px;
+        border: solid rgb(188, 116, 0) 0.5px;
         border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.147);
+        background-color: rgba(25, 25, 25, 0.653);
     }
 
     .imgBox {
