@@ -3,36 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./asset/css/Nav-Foot.css">
-
+    <link rel="stylesheet" href="./asset/css/mobile.css">
     <title>Accueil</title>
 </head>
 
 <body>
+    <!--------------------VoletBuger----------------------->
+<div id="burgerBar" class="voletBurgerClose">
+    <img id="logoBurger" src="./asset/img/koopa.png" alt="logo">
+    <p id="titleMarque">GameCard</p>
+    <a class="boutonVolet" href="./index.html">
+        <p>Accueil</p>
+    </a>
+</div>
+<!--------------------VoletBuger----------------------->
     <!-----------------------NavBar------------------------->
     <nav id="navBar">
         <img id="logo" src="./asset/img/koopa.png" alt="logo">
+        <!--
         <div id="boiteConex">
             <input class="input" type="mail" placeholder="e-mail">
             <input class="input" type="password" placeholder="mot de passe">
         </div>
-
+-->
         <div id="boiteConex2">
+            <div id="boiteBurger">
+                <span class="material-symbols-outlined burgerMenu">menu</span>
+            </div>
             <a class="bouton" href="./pageJeux.html">
                 <p>Page du jeu</p>
             </a>
             <a class="bouton" href="./compteUtilisateur.html">
                 <p>Compte</p>
             </a>
-            <a class="bouton" href="./index.html">
-                <p>Connexion</p>
-            </a>
+
             <a class="bouton" href="./formulaire.html">
                 <p>Inscription</p>
             </a>
         </div>
     </nav>
     <!--------------------FinDeNavBar----------------------->
+
     <div id="corps">
         <div id="enter">
             <div id="containerEnter">
@@ -51,7 +65,8 @@
 
     </footer>
     <!---------------------FinDeFooter----------------------->
-    <script src="#"></script>
+    <script src="./asset/js/BurgerMenu.js"></script>
+
 </body>
 
 </html>

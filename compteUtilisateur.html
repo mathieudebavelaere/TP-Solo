@@ -3,38 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./asset/css/Nav-Foot.css">
-    <link rel="stylesheet" href="./asset/css/miniCard.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/compteUtilisateur.css">
+    <link rel="stylesheet" href="./asset/css/Nav-Foot.css">
     <link rel="stylesheet" href="./asset/css/mobile.css">
+    <link rel="stylesheet" href="./asset/css/miniCard.css">
     <title>Compte</title>
 </head>
 
 <body>
-    <!-----------------------NavBar------------------------->
-    <nav id="navBar">
-        <img id="logo" src="./asset/img/koopa.png" alt="logo">
-        <div id="boiteConex">
-            <input class="input" type="mail" placeholder="e-mail">
-            <input class="input" type="password" placeholder="mot de passe">
+        <!--------------------VoletBuger----------------------->
+<div id="burgerBar" class="voletBurgerClose">
+    <img id="logoBurger" src="./asset/img/koopa.png" alt="logo">
+    <p id="titleMarque">GameCard</p>
+    <a class="boutonVolet" href="./index.html">
+        <p>Accueil</p>
+    </a>
+</div>
+<!--------------------VoletBuger----------------------->
+   <!-----------------------NavBar------------------------->
+   <nav id="navBar">
+    <img id="logo" src="./asset/img/koopa.png" alt="logo">
+    <!--
+    <div id="boiteConex">
+        <input class="input" type="mail" placeholder="e-mail">
+        <input class="input" type="password" placeholder="mot de passe">
+    </div>
+-->
+    <div id="boiteConex2">
+        <div id="boiteBurger">
+            <span class="material-symbols-outlined burgerMenu">menu</span>
         </div>
+        <a class="bouton" href="./pageJeux.html">
+            <p>Page du jeu</p>
+        </a>
+        <a class="bouton" href="./compteUtilisateur.html">
+            <p>Compte</p>
+        </a>
 
-        <div id="boiteConex2">
-            <a class="bouton" href="./pageJeux.html">
-                <p>Page Du jeux</p>
-            </a>
-            <a class="bouton" href="./compteUtilisateur.html">
-                <p>Compte</p>
-            </a>
-            <a class="bouton" href="./index.html">
-                <p>Connexion</p>
-            </a>
-            <a class="bouton" href="./formulaire.html">
-                <p>Inscription</p>
-            </a>
-        </div>
-    </nav>
-    <!--------------------FinDeNavBar----------------------->
+        <a class="bouton" href="./formulaire.html">
+            <p>Inscription</p>
+        </a>
+    </div>
+</nav>
+<!--------------------FinDeNavBar----------------------->
     <div id="corps">
         <div id="boitecontainer">
             <!--------------------UserBox----------------------->
@@ -53,7 +69,6 @@
                         <p id="numberTrophée">348</p>
                     </div>
                 </div>
-
             </div>
 
             <div id="boxHG" class="skinFrontHG1">
@@ -287,48 +302,23 @@
 
                         <!--------------->
                         <div id="friends">
-                            <div id="photoFirends"></div>
-                            <div id="descriptFriends">
-                                <div class="boxFriends">Friends 1</div>
-                                <div class="boxFriends">Badges</div>
-                                <div class="boxFriends">Voir profil</div>
-                            </div>
+
                         </div>
                         <!--------------->
                         <div id="friends">
-                            <div id="photoFirends"></div>
-                            <div id="descriptFriends">
-                                <div class="boxFriends">Friends 2</div>
-                                <div class="boxFriends">Badges</div>
-                                <div class="boxFriends">Voir profil</div>
-                            </div>
+
                         </div>
                         <!--------------->
                         <div id="friends">
-                            <div id="photoFirends"></div>
-                            <div id="descriptFriends">
-                                <div class="boxFriends">Friends 3</div>
-                                <div class="boxFriends">Badges</div>
-                                <div class="boxFriends">Voir profil</div>
-                            </div>
+
                         </div>
                         <!--------------->
                         <div id="friends">
-                            <div id="photoFirends"></div>
-                            <div id="descriptFriends">
-                                <div class="boxFriends">Friends 4</div>
-                                <div class="boxFriends">Badges</div>
-                                <div class="boxFriends">Voir profil</div>
-                            </div>
+
                         </div>
                         <!--------------->
                         <div id="friends">
-                            <div id="photoFirends"></div>
-                            <div id="descriptFriends">
-                                <div class="boxFriends">Friends 5</div>
-                                <div class="boxFriends">Badges</div>
-                                <div class="boxFriends">Voir profil</div>
-                            </div>
+
                         </div>
                         <!--------------->
                     </div>
@@ -383,6 +373,7 @@
 
     </footer>
     <!---------------------FinDeFooter----------------------->
+    <script src="./asset/js/BurgerMenu.js"></script>
     <script src="./asset/js/onglet.js"></script>
     <script src="./asset/js/skin.js"></script>
 </body>

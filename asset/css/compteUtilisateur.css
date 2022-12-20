@@ -16,7 +16,7 @@ cela ajustera mon contenu directement----------*/
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    height: 50vw;
+    height: 60vw;
     width: 100%;
     margin-bottom: 3%;
 }
@@ -24,7 +24,7 @@ cela ajustera mon contenu directement----------*/
 #boxGame {
     position: absolute;
     margin-top: 40px;
-    height: 100%;
+    height: 90%;
     width: 90%;
     border: solid rgb(188, 116, 0) 0.5px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -47,7 +47,6 @@ cela ajustera mon contenu directement----------*/
     text-align: center;
     color: whitesmoke;
     margin-top: 20px;
-    border: solid rgb(188, 116, 0) 0.5px;
     border-radius: 5px;
     background-color: rgba(176, 176, 176, 0.279);
     transition: 0.5s;
@@ -57,7 +56,7 @@ cela ajustera mon contenu directement----------*/
 .onglet:hover {
     margin-top: 10px;
     transition: 0.5s;
-    color: #252525;
+    color: rgb(167, 127, 19);
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.863);
 }
@@ -81,7 +80,7 @@ cela ajustera mon contenu directement----------*/
     border-radius: 5px;
     border: solid rgb(188, 116, 0) 0.5px;
     margin-top: 10px;
-    color: #252525;
+    color: rgb(167, 127, 19);
     background-color: rgba(255, 255, 255, 0.863);
 }
 
@@ -123,7 +122,6 @@ cela ajustera mon contenu directement----------*/
     background-size: 100%;
     background-repeat: no-repeat;
     background-color: rgba(0, 0, 0, 0.3);
-    border: solid rgb(188, 116, 0) 0.5px;
 }
 
 #psnPlus {
@@ -238,7 +236,6 @@ cela ajustera mon contenu directement----------*/
 
 #boiteCompte:hover {
     background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: #c5c5c5 0px 0px 5px;
     transition: 0.5s;
 }
 
@@ -339,8 +336,11 @@ cela ajustera mon contenu directement----------*/
     color: whitesmoke;
     background-color: #272727;
     border: none;
-    border: solid rgb(188, 116, 0) 0.5px;
     border-radius: 5px;
+}
+#searchGame::placeholder {
+
+    color:#afafaf
 }
 .searchGame {
     font-size: 20px;
@@ -350,7 +350,6 @@ cela ajustera mon contenu directement----------*/
     color: whitesmoke;
     background-color: #272727;
     border: none;
-    border: solid rgb(188, 116, 0) 0.5px;
     border-radius: 5px;
 }
 .searchGame:hover {
@@ -412,12 +411,13 @@ cela ajustera mon contenu directement----------*/
 }
 
 #listFriends {
-    height: 90%;
-    width: 35%;
-    margin-bottom: 1%;
+    height: 80%;
+    width: 30%;
+    margin-bottom: 6%;
+    margin-left: 3%;
     border-radius: 5px;
     border: solid rgb(188, 116, 0) 0.5px;
-    background-color: rgba(255, 255, 255, 0.09);
+    background-color: rgba(0, 0, 0, 0.386);
 }
 
 .scroller {
@@ -440,22 +440,19 @@ cela ajustera mon contenu directement----------*/
 }
 
 .titleFriends {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 20px;
     color: whitesmoke;
-    width: 38%;
-    height: 5%;
+    text-align: center;
+    width: 20%;
+ 
 }
-
 
 #friends {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
-    height: 25%;
+    justify-content: space-evenly;
+    height: 15%;
     width: 90%;
     margin: 3%;
     border-radius: 5px;
@@ -478,25 +475,26 @@ cela ajustera mon contenu directement----------*/
 }
 
 .boxFriends {
-    margin: 5%;
+    margin: 0%;
     width: 200px;
     background-color: #959595;
 }
 
 #mainFriends {
-    height: 90%;
-    width: 60%;
-    margin-bottom: 1%;
+    height: 80%;
+    width: 55%;
+    margin-bottom: 6%;
+    margin-right: 3%;
     border-radius: 5px;
     border: solid rgb(188, 116, 0) 0.5px;
-    background-color: rgba(255, 255, 255, 0.09);
+    background-color: rgba(0, 0, 0, 0.386);
 }
 
 .profilFriends {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 62%;
+    width: 50%;
     height: 5%;
     font-size: 20px;
     color: whitesmoke;
@@ -530,9 +528,9 @@ cela ajustera mon contenu directement----------*/
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 90%;
-    width: 95%;
-    margin-bottom: 1%;
+    height: 80%;
+    width: 85%;
+    margin-bottom: 6%;
     border-radius: 5px;
     border: solid rgb(188, 116, 0) 0.5px;
     background-color: rgba(0, 0, 0, 0.386);
@@ -599,7 +597,7 @@ cela ajustera mon contenu directement----------*/
     border-radius: 3px;
     padding-left: 5%;
     color: rgb(255, 255, 255);
-    background-color: hsla(0, 0%, 10%, 0.679);
+    background-color: hsla(0, 0%, 10%, 0.816);
 }
 
 .boutonF {
@@ -618,7 +616,6 @@ cela ajustera mon contenu directement----------*/
 
 .boutonF:hover {
     background-color: #31313153;
-    box-shadow: rgb(157, 112, 21) 0px 0px 5px;
     transition: 0.5s;
 }
 .titleSkin {
