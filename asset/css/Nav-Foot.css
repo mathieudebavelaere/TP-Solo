@@ -9,10 +9,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: auto;
     width: 100%;
-    background-color: #424242;
+    background-color: #232323;
+}
+#burgerBar {
+    display: none;
 }
 #footerBox {
     margin-top: 2%;
@@ -50,8 +53,8 @@ display: none;
 
 #boiteConex2 {
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    justify-content:flex-start;
+    height: 100px;
     width: 100%;
     font-size: 30px;
 }
@@ -65,14 +68,15 @@ display: none;
     width:24%;
     font-size: 90%;
     text-align: center;
-    border: solid whitesmoke 1px;
+    border-right: solid whitesmoke 0.5px;
+    border-left: solid whitesmoke 0.5px;
     border-radius: 3px;
     color: whitesmoke;
-    background-color: #ffffff85;
+
 }
 
 .bouton:hover {
-    background-color: #193c5a53;
+    background-color: #5a511953;
 }
 
 .input {
