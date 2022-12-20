@@ -3,7 +3,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: fit-content;
+   
         padding: 0%;
         margin: 0%;
     }
@@ -11,6 +11,12 @@
     #corps {
         padding: 0%;
         margin: 0%;
+    }
+    #footerBox {
+        margin-top: 20%;
+        height: 200px;
+        width: 100%;
+        background-color: #926319;
     }
 /*--------------------------NavBar-------------------------------*/
     #navBar {
@@ -86,11 +92,11 @@
     }
 /*--------------------------FinDeNavBar-------------------------------*/
 /*-------------------------VoletBurger-------------------------------*/
-.voletBurgerOpen {
+.voletBurger {
 position: fixed;
 z-index: 5;
 top: 0;
-left: 0;
+left: -100vw;
 display: flex;
 align-items: center;
 flex-direction: column;
@@ -98,21 +104,13 @@ height: 100%;
 width: 70%;
 background-image: url('../img/BackVolet.png');
 background-size: 100%;
-transition: 1s;
+transition: 0.5s;
 }
-.voletBurgerClose {
-    position: fixed;
-    z-index: 5;
-    top: 0;
-    left: -100vw;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 85%;
-    width: 70%;
-    background-image: url('../img/BackVolet.png');
-    transition: 1s;
-    }
+
+.burgerOpen {
+    left: 0vw;
+}
+
 
 #titleMarque {
     display: flex;
@@ -154,14 +152,14 @@ transition: 1s;
 .inputUser::placeholder {
     font-size: 50px;
 }
+::placeholder {
+    color: rgba(255, 255, 255, 0.506);
+}
 /*-------------------------FinDeVoletBurger-------------------------------*/
-    ::placeholder {
-        color: rgba(255, 255, 255, 0.506);
-    }
 
     #footer {
         height: 100px;
-        margin-bottom: 90px;
+        width: 100%;
         background-color: #787878;
     }
 
