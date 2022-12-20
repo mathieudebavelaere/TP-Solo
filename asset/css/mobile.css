@@ -67,7 +67,6 @@
         justify-content: center;
         height: 100px;
         width: 25%;
-        background-color: #16161600;
         border: solid white 0px;
         border-right: solid whitesmoke 1px;
     }
@@ -84,7 +83,6 @@
         border: solid whitesmoke 1px;
         border-radius: 3px;
         color: whitesmoke;
-        background-color: #ffffff2b;
     }
 /*--------------------------FinDeNavBar-------------------------------*/
 /*-------------------------VoletBurger-------------------------------*/
@@ -96,7 +94,7 @@ left: 0;
 display: flex;
 align-items: center;
 flex-direction: column;
-height: 85%;
+height: 100%;
 width: 70%;
 background-image: url('../img/BackVolet.png');
 background-size: 100%;
@@ -120,33 +118,42 @@ transition: 1s;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70px;
+    height: 150px;
     width: 100%;
     margin-top: 5px;
     text-decoration: none;
     color: whitesmoke;
-    font-size: 50px;
-    background-color: #272727af;
+    font-size: 100px;
 }
 #logoBurger {
     margin-top: 10px;
-    height: 90px;
-    width: 90px;
+    height: 200px;
+    width: 200px;
 }
 .boutonVolet {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 50px;
     height: 60px;
-    width: 100%;
-    margin-top: 5px;
+    width: 50%;
+    margin-top: 50px;
     text-decoration: none;
-    color: whitesmoke;
-    background-color: #272727af;
-  
+    color: rgba(245, 245, 245, 0.707);
 }
-
+.inputUser {
+    height: 70px;
+    width: 80%;
+    margin-top: 70px;
+    font-size: 50px;
+    border: solid whitesmoke 1px;
+    border-radius: 3px;
+    color: whitesmoke;
+    background-color: #ffffff2b;
+}
+.inputUser::placeholder {
+    font-size: 50px;
+}
 /*-------------------------FinDeVoletBurger-------------------------------*/
     ::placeholder {
         color: rgba(255, 255, 255, 0.506);

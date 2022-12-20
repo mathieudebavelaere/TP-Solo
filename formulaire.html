@@ -9,29 +9,50 @@
 </head>
  
 <body>
-    <!-----------------------NavBar------------------------->
-    <nav id="navBar">
-        <img id="logo" src="./asset/img/koopa.png" alt="logo">
-        <div id="boiteConex">
-            <input class="input" type="mail" placeholder="e-mail">
-            <input class="input" type="password" placeholder="mot de passe">
+    <!--------------------VoletBuger----------------------->
+    <div id="burgerBar" class="voletBurgerClose">
+        <img id="logoBurger" src="./asset/img/koopa.png" alt="logo">
+        <p id="titleMarque">GameCard</p>
+    
+        <a class="boutonVolet" href="./index.html">
+            <p>Accueil</p>
+        </a>
+        <a class="boutonVolet" href="./compteUtilisateur.html">
+            <p>Compte</p>
+        </a>
+        <a class="boutonVolet" href="./pageJeux.html">
+            <p>Page du jeu</p>
+        </a>
+        <a class="boutonVolet" href="./formulaire.html">
+            <p>Inscription</p>
+        </a>
+        
+            <input class="inputUser" type="mail" placeholder="e-mail">
+            <input class="inputUser" type="password" placeholder="mot de passe">
+    
+    </div>
+    <!--------------------VoletBuger----------------------->
+   <!-----------------------NavBar------------------------->
+   <nav id="navBar">
+    <img id="logo" src="./asset/img/koopa.png" alt="logo">
+
+    <div id="boiteConex2">
+        <div id="boiteBurger">
+            <span class="material-symbols-outlined burgerMenu">menu</span>
         </div>
-        <div id="boiteConex2">
-            <a class="bouton" href="./pageJeux.html">
-                <p>Page Du jeux</p>
-            </a>
-            <a class="bouton" href="./compteUtilisateur.html">
-                <p>Compte</p>
-            </a>
-            <a class="bouton" href="./index.html">
-                <p>Connexion</p>
-            </a>
-            <a class="bouton" href="./formulaire.html">
-                <p>Inscription</p>
-            </a>
-        </div>
-    </nav>
-    <!--------------------FinDeNavBar----------------------->
+        <a class="bouton" href="./pageJeux.html">
+            <p>Page du jeu</p>
+        </a>
+        <a class="bouton" href="./compteUtilisateur.html">
+            <p>Compte</p>
+        </a>
+
+        <a class="bouton" href="./formulaire.html">
+            <p>Inscription</p>
+        </a>
+    </div>
+</nav>
+<!--------------------FinDeNavBar----------------------->
 
     <div id="corps">
         <form action="#" method="POST"></form>
@@ -96,6 +117,7 @@
     </footer>
     <!---------------------FinDeFooter----------------------->
     <script src="./asset/js/formulaire.js"></script>
+    <script src="./asset/js/BurgerMenu.js"></script>
 </body>
 
 </html>
