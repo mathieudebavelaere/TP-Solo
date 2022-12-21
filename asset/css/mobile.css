@@ -27,7 +27,14 @@
         height: 100px;
         background-color: #785112;
     }
-
+    #navPC {
+        display: none;
+        width: 100%;
+    }
+    #navMobil {
+        display:flex;
+        width: 100%;
+    }
     #burgerBar {
         display: flex;
     }
@@ -653,7 +660,7 @@ cela ajustera mon contenu directement----------*/
         justify-content: flex-start;
         height: 18%;
         width: 90%;
-        margin-bottom: 1%;
+        margin-bottom: 2%;
         margin-left: 0%;
         border-radius: 5px;
         border: solid white 1px;
@@ -704,6 +711,7 @@ cela ajustera mon contenu directement----------*/
         width: 170px;
         margin: 1%;
         border-radius: 5px;
+        margin-top: 0;
         color: whitesmoke;
         background-color: rgba(33, 33, 33, 0.617);
     }
@@ -786,13 +794,13 @@ cela ajustera mon contenu directement----------*/
         width: 95%;
         margin-bottom: 1%;
         border-radius: 5px;
-        border: solid white 1px;
         background-color: #4d4d4d6c;
     }
 
     .avatarReglage {
         height: 150px;
         width: 150px;
+        margin-top: px;
         border-radius: 15%;
         background-image: url('#');
         background-color: rgba(255, 255, 255, .5);

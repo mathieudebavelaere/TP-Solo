@@ -47,31 +47,64 @@
     <!--------------------VoletBuger----------------------->
     <!-----------------------NavBar------------------------->
     <nav id="navBar">
-        <img id="logo" src="./asset/img/logoVideoGameDiary.png" alt="logo">
+        <div id="navPC">
+            <img id="logo" src="./asset/img/logoVideoGameDiary.png" alt="logo">
 
-        <div id="boiteConex2">
-            <div id="boiteBurger">
-                <span class="material-symbols-outlined burgerMenu">menu</span>
+            <div id="boiteConex2">
+                <div id="boiteBurger">
+                    <span class="material-symbols-outlined burgerMenu">menu</span>
+                </div>
+                <a class="bouton" href="./index.html">
+                    <span class="material-symbols-outlined burgerMenu">
+                        home
+                    </span>
+                    <p class="navTitle">Accueil</p>
+                </a>
+                <a class="bouton" href="./pageJeux.html">
+                    <span class="material-symbols-outlined burgerMenu">
+                        stadia_controller
+                    </span>
+                    <p class="navTitle">Page de jeu</p>
+                </a>
+                <a class="bouton" href="./compteUtilisateur.html">
+                    <span class="material-symbols-outlined burgerMenu">
+                        account_circle
+                    </span>
+                    <p class="navTitle">Compte</p>
+                </a>
+
+                <a class="bouton" href="./formulaire.html">
+                    <p>Inscription</p>
+                </a>
             </div>
-            <div id="onglet1M" class="bouton">
-                <span class="material-symbols-outlined burgerMenu">
-                    star
-                </span>
-            </div>
-            <div id="onglet2M" class="bouton">
-                <span class="material-symbols-outlined burgerMenu">
-                    collections_bookmark
-                </span>
-            </div>
-            <div id="onglet3M" class="bouton">
-                <span class="material-symbols-outlined burgerMenu">
-                    groups
-                </span>
-            </div>
-            <div id="onglet4M" class="bouton">
-                <span class="material-symbols-outlined burgerMenu">
-                    settings
-                </span>
+        </div>
+        <div id="navMobil">
+            <img id="logo" src="./asset/img/logoVideoGameDiary.png" alt="logo">
+
+            <div id="boiteConex2">
+                <div id="boiteBurger">
+                    <span class="material-symbols-outlined burgerMenu">menu</span>
+                </div>
+                <div id="onglet1M" class="bouton">
+                    <span class="material-symbols-outlined burgerMenu">
+                        star
+                    </span>
+                </div>
+                <div id="onglet2M" class="bouton">
+                    <span class="material-symbols-outlined burgerMenu">
+                        collections_bookmark
+                    </span>
+                </div>
+                <div id="onglet3M" class="bouton">
+                    <span class="material-symbols-outlined burgerMenu">
+                        groups
+                    </span>
+                </div>
+                <div id="onglet4M" class="bouton">
+                    <span class="material-symbols-outlined burgerMenu">
+                        settings
+                    </span>
+                </div>
             </div>
         </div>
     </nav>
@@ -336,23 +369,23 @@
                                 <img class="imgFriend" src="./asset/img/avatar/Unknown-2.jpeg" alt="">
                                 <p class="utilisateurFirend">Utilisateur</p>
                             </div>
-                                                        <!--------------->
-                                                        <div id="friends">
-                                                            <img class="imgFriend" src="./asset/img/avatar/Unknown.jpeg" alt="">
-                                                            <p class="utilisateurFirend">Utilisateur</p>
-                                                        </div>
-                                                        <!--------------->
-                                                        <div id="friends">
-                                                            <img class="imgFriend" src="./asset/img/avatar/Unknown-1.jpeg" alt="">
-                                                            <p class="utilisateurFirend">Utilisateur</p>
-                                                        </div>
-                                                        <!--------------->
-                                                        <div id="friends">
-                                                            <img class="imgFriend" src="./asset/img/avatar/Unknown-2.jpeg" alt="">
-                                                            <p class="utilisateurFirend">Utilisateur</p>
-                                                        </div>
-                                                        <!--------------->
-                                                                                    <!--------------->
+                            <!--------------->
+                            <div id="friends">
+                                <img class="imgFriend" src="./asset/img/avatar/Unknown.jpeg" alt="">
+                                <p class="utilisateurFirend">Utilisateur</p>
+                            </div>
+                            <!--------------->
+                            <div id="friends">
+                                <img class="imgFriend" src="./asset/img/avatar/Unknown-1.jpeg" alt="">
+                                <p class="utilisateurFirend">Utilisateur</p>
+                            </div>
+                            <!--------------->
+                            <div id="friends">
+                                <img class="imgFriend" src="./asset/img/avatar/Unknown-2.jpeg" alt="">
+                                <p class="utilisateurFirend">Utilisateur</p>
+                            </div>
+                            <!--------------->
+                            <!--------------->
                             <div id="friends">
                                 <img class="imgFriend" src="./asset/img/avatar/Unknown.jpeg" alt="">
                                 <p class="utilisateurFirend">Utilisateur</p>
@@ -378,9 +411,6 @@
             </div>
             <!--------------------ongletFour---------------------------------------------------------------------------->
             <div id="ongletFour" class="noVisible">
-                <div id="titleReglage">
-                    <p>Réglages</p>
-                </div>
                 <div id="boxReglage">
 
                     <div id="boiteReglageG">
@@ -418,7 +448,7 @@
         </div>
     </div>
     <!------------------------Footer------------------------->
-    <footer id="footerBox"></footer>
+   <!-- <footer id="footerBox"></footer> -->
     <!---------------------FinDeFooter----------------------->
     <script src="./asset/js/BurgerMenu.js"></script>
     <script src="./asset/js/onglet.js"></script>
