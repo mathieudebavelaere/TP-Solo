@@ -404,12 +404,22 @@ cela ajustera mon contenu directement----------*/
     position: absolute;
     z-index: 1;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
     margin-top: 40px;
+}
+
+#BoiteFriend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
 }
 
 #listFriends {
@@ -423,7 +433,8 @@ cela ajustera mon contenu directement----------*/
 }
 
 .scroller {
-    overflow-y: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 #listFriends::-webkit-scrollbar {
@@ -492,15 +503,6 @@ cela ajustera mon contenu directement----------*/
     background-color: rgba(0, 0, 0, 0.386);
 }
 
-.profilFriends {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    height: 5%;
-    font-size: 20px;
-    color: whitesmoke;
-}
 
 /*---------------------OngletFour---------------------------*/
 #ongletFour {
@@ -558,6 +560,8 @@ cela ajustera mon contenu directement----------*/
 }
 
 .boutonReglage {
+    display: flex;
+    flex-direction: row;
     width: 40%;
     height: 30px;
     border: none;
@@ -695,58 +699,37 @@ cela ajustera mon contenu directement----------*/
     display: flex;
     align-items: center;
     justify-content: center;
-     background-image: url('../img/backFive.png');
-     background-color: #3e3e3e;
+    background-image: url('../img/backFive.png');
+    background-color: #3e3e3e;
     background-size: 100%;
     transition: 0.5s;
 }
 
+.skinFront1,
 .skinFrontHG1 {
     background-image: url('../img/backFive.png');
     background-color: #3e3e3e;
-    background-size: 300%;
-    transition: 0.5s;
-}
-
-.skinFront1 {
-   background-image: url('../img/backFive.png');
-    background-color: #303030;
     background-size: 100%;
     transition: 0.5s;
 }
 
-.skinFront2 {
-    background-image: url('../img/backFour.png');
-    background-size: 100%;
-    transition: 0.5s;
-}
-
+.skinFront2,
 .skinFrontHG2 {
     background-image: url('../img/backFour.png');
-    background-size: 300%;
-    transition: 0.5s;
-}
-
-.skinFront3 {
-    background-image: url('../img/backThree.png');
     background-size: 100%;
     transition: 0.5s;
 }
 
+.skinFront3,
 .skinFrontHG3 {
     background-image: url('../img/backThree.png');
-    background-size: 300%;
-    transition: 0.5s;
-}
-
-.skinFront4 {
-    background-image: url('../img/backOne.png');
     background-size: 100%;
     transition: 0.5s;
 }
 
+.skinFront4,
 .skinFrontHG4 {
     background-image: url('../img/backOne.png');
-    background-size: 300%;
+    background-size: 100%;
     transition: 0.5s;
 }

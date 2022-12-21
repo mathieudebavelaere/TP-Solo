@@ -84,7 +84,16 @@
     .bouton:hover {
         background-color: #926319;
     }
-
+    .boutonM {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 18.81%;
+        border: solid white 0px;
+        border-right: solid whitesmoke 1px;
+        background-color: #926319;
+    }
     .input {
         height: 20px;
         margin: 0.1%;
@@ -144,7 +153,7 @@
 
     #logoBurger {
         background-image: url('../img/logoVideoGameDiary.png');
-        background-size: 100%;
+        background-size: 100% 100%;
         margin-top: 10px;
         height: 400px;
         width: 400px;
@@ -233,7 +242,7 @@ cela ajustera mon contenu directement----------*/
     #parentGame {
         width: 100%;
         margin-bottom: 3%;
-        margin-top: 20px;
+        margin-top: 0px;
         height: 1250px;
     }
 
@@ -250,6 +259,12 @@ cela ajustera mon contenu directement----------*/
         height: 100%;
         display: flex;
         justify-content: space-evenly;
+    }
+    #onglet1,
+    #onglet2,
+    #onglet3,
+    #onglet4 {
+        display: none;
     }
 
     .onglet {
@@ -428,7 +443,7 @@ cela ajustera mon contenu directement----------*/
         flex-direction: row;
         padding: 0%;
         margin-right: 0%;
-        margin-top: 3%;
+        margin-top: 5%;
         height: 100px;
         width: 100%;
         border: solid rgb(188, 116, 0) 0.5px;
@@ -510,7 +525,7 @@ cela ajustera mon contenu directement----------*/
         flex-wrap: wrap;
         height: 200px;
         width: 100%;
-        margin-top: 3%;
+        margin-top: 5%;
         padding: 0%;
         border-radius: 0px;
     }
@@ -520,7 +535,7 @@ cela ajustera mon contenu directement----------*/
         height: 70%;
         width: 60%;
         color: whitesmoke;
-        background-color: #272727;
+        background-color: #585858;
         border: none;
         border-radius: 5px;
     }
@@ -531,7 +546,7 @@ cela ajustera mon contenu directement----------*/
         width: 30%;
         margin-left: 10px;
         color: whitesmoke;
-        background-color: #272727;
+        background-color: #585858;
         border: none;
         border-radius: 5px;
     }
@@ -591,7 +606,8 @@ cela ajustera mon contenu directement----------*/
     }
 
     .scroller {
-        overflow-y: scroll;
+        overflow-y: hidden;
+        overflow-x: auto;
     }
 
     #ongletTwo::-webkit-scrollbar {
@@ -600,7 +616,6 @@ cela ajustera mon contenu directement----------*/
     }
 
     #ongletTwo::-webkit-scrollbar-thumb {
-
         background-color: rgb(221, 221, 221);
         /* color of the scroll thumb */
         border-radius: 20px;
@@ -613,26 +628,37 @@ cela ajustera mon contenu directement----------*/
     #ongletThree {
         position: absolute;
         z-index: 1;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-wrap: wrap;
         height: 100%;
         width: 100%;
         margin-top: 40px;
     }
 
+    #BoiteFriend {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
     #listFriends {
-        height: 90%;
-        width: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 15%;
+        width: 80%;
         margin-bottom: 1%;
+        margin-left: 0%;
         border-radius: 5px;
         border: solid white 1px;
-        background-color: rgba(255, 255, 255, 0.09);
+        background-color: #4d4d4d6c;
     }
 
     .scroller {
-        overflow-y: scroll;
+        overflow: auto;
     }
 
     #listFriends::-webkit-scrollbar {
@@ -641,7 +667,6 @@ cela ajustera mon contenu directement----------*/
     }
 
     #listFriends::-webkit-scrollbar-thumb {
-
         background-color: rgba(221, 221, 221, 0.436);
         /* color of the scroll thumb */
         border-radius: 20px;
@@ -661,15 +686,13 @@ cela ajustera mon contenu directement----------*/
         height: 5%;
     }
 
-
     #friends {
         display: flex;
         flex-direction: row;
-        align-items: center;
-        justify-content: flex-start;
-        height: 15%;
-        width: 90%;
-        margin: 3%;
+        justify-content: space-evenly;
+        height: 150px;
+        width: 150px;
+        margin: 2%;
         border-radius: 5px;
         border: solid rgb(255, 255, 255) 1px;
         background-color: rgba(33, 33, 33, 0.617);
@@ -686,33 +709,22 @@ cela ajustera mon contenu directement----------*/
     #descriptFriends {
         color: whitesmoke;
         margin-left: 5%;
-
     }
 
     .boxFriends {
-        margin: 5%;
+        margin: 0%;
         width: 200px;
         background-color: #959595;
     }
 
     #mainFriends {
-        height: 90%;
-        width: 55%;
-        margin-bottom: 1%;
+        height: 80%;
+        width: 80%;
+        margin-bottom: 0%;
+        margin-right: 0%;
         border-radius: 5px;
         border: solid white 1px;
-        background-color: rgba(255, 255, 255, 0.09);
-    }
-
-    .profilFriends {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 62%;
-        height: 5%;
-        margin-top: 2%;
-        font-size: 20px;
-        color: whitesmoke;
+        background-color: #4d4d4d6c;
     }
 
     /*---------------------OngletFour---------------------------*/
@@ -740,7 +752,7 @@ cela ajustera mon contenu directement----------*/
 
     #boxReglage {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 90%;
@@ -748,7 +760,7 @@ cela ajustera mon contenu directement----------*/
         margin-bottom: 1%;
         border-radius: 5px;
         border: solid white 1px;
-        background-color: rgba(255, 255, 255, 0.09);
+        background-color: #4d4d4d6c;
     }
 
     .avatarReglage {
@@ -757,7 +769,7 @@ cela ajustera mon contenu directement----------*/
         border-radius: 15%;
         background-image: url('#');
         background-color: rgba(255, 255, 255, .5);
-        margin-right: 2%;
+        margin-right: 0%;
     }
 
     #boiteReglageG {
@@ -765,19 +777,22 @@ cela ajustera mon contenu directement----------*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100%;
-        width: 40%;
+        height: 70%;
+        width: 100%;
         margin-left: 3%;
     }
 
     .boutonReglage {
-        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
         height: 30px;
         border: none;
         border-radius: 5px;
         margin-top: 5%;
         color: whitesmoke;
-        background-color: #ffffff85;
+        background-color: #4d4d4dad;
         border: solid whitesmoke 1px;
         cursor: pointer;
     }
@@ -830,9 +845,11 @@ cela ajustera mon contenu directement----------*/
     }
 
     .titleSkin {
+        text-align: center;
         color: whitesmoke;
-        margin-top: 10px;
+        margin-top: 0px;
         font-size: 20px;
+        width: 100%;
     }
 
     #boiteSkin {
@@ -840,7 +857,8 @@ cela ajustera mon contenu directement----------*/
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
+        width: 90%;
+
         height: 150px;
     }
 }

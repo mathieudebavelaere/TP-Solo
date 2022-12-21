@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-                  <!------------IconDansLaBarNav------------->
-                  <link rel="shortcut icon" href="./asset/img/logoVideoGameDiary.png" type="image/x-icon">
-                  <!----------FinDeL'IconDansLaBarNav----------->
+    <!------------IconDansLaBarNav------------->
+    <link rel="shortcut icon" href="./asset/img/logoVideoGameDiary.png" type="image/x-icon">
+    <!----------FinDeL'IconDansLaBarNav----------->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,65 +19,63 @@
 </head>
 
 <body>
- <!--------------------VoletBuger----------------------->
- <div id="burgerBar" class="voletBurger">
-    <div id="boiteBouton">
-        <a id="logoBurger" href="./index.html"></a>
-    <p id="titleMarque"></p>
+    <!--------------------VoletBuger----------------------->
+    <div id="burgerBar" class="voletBurger">
+        <div id="boiteBouton">
+            <a id="logoBurger" href="./index.html"></a>
+            <p id="titleMarque"></p>
 
-    <a class="boutonVolet" href="./compteUtilisateur.html">
-        <p>Compte</p>
-    </a>
-    <a class="boutonVolet" href="./pageJeux.html">
-        <p>Page du jeu</p>
-    </a>
-</div>
-    <div id="compteUser">
-        <p id="titleMarque">Mon Compte</p>
-        <input class="inputUser" type="mail" placeholder="e-mail">
-        <input class="inputUser" type="password" placeholder="mot de passe">
-        <a class="boutonVolet" href="./formulaire.html">
-            <p>Connexion</p>
-        </a>
-        <a class="boutonVolet marginBurger" href="./formulaire.html">
-            <p>Inscription</p>
-        </a>
-    </div>
-</div>
-<!--------------------VoletBuger----------------------->
-<!-----------------------NavBar------------------------->
-<nav id="navBar">
-    <img id="logo" src="./asset/img/logoVideoGameDiary.png" alt="logo">
-
-    <div id="boiteConex2">
-        <div id="boiteBurger">
-            <span class="material-symbols-outlined burgerMenu">menu</span>
+            <a class="boutonVolet" href="./compteUtilisateur.html">
+                <p>Compte</p>
+            </a>
+            <a class="boutonVolet" href="./pageJeux.html">
+                <p>Page du jeu</p>
+            </a>
         </div>
-        <a class="bouton" href="./index.html">
-            <span class="material-symbols-outlined burgerMenu">
-                home
-            </span>
-            <p class="navTitle">Accueil</p>
-        </a>
-        <a class="bouton" href="./pageJeux.html">
-            <span class="material-symbols-outlined burgerMenu">
-                stadia_controller
-            </span>
-            <p class="navTitle">Page de jeu</p>
-        </a>
-        <a class="bouton" href="./compteUtilisateur.html">
-            <span class="material-symbols-outlined burgerMenu">
-                account_circle
-            </span>
-            <p class="navTitle">Compte</p>
-        </a>
-
-        <a class="bouton" href="./formulaire.html">
-            <p>Inscription</p>
-        </a>
+        <div id="compteUser">
+            <p id="titleMarque">Mon Compte</p>
+            <input class="inputUser" type="mail" placeholder="e-mail">
+            <input class="inputUser" type="password" placeholder="mot de passe">
+            <a class="boutonVolet" href="./formulaire.html">
+                <p>Connexion</p>
+            </a>
+            <a class="boutonVolet marginBurger" href="./formulaire.html">
+                <p>Inscription</p>
+            </a>
+        </div>
     </div>
-</nav>
-<!--------------------FinDeNavBar----------------------->
+    <!--------------------VoletBuger----------------------->
+    <!-----------------------NavBar------------------------->
+    <nav id="navBar">
+        <img id="logo" src="./asset/img/logoVideoGameDiary.png" alt="logo">
+
+        <div id="boiteConex2">
+            <div id="boiteBurger">
+                <span class="material-symbols-outlined burgerMenu">menu</span>
+            </div>
+            <div id="onglet1M" class="bouton">
+                <span class="material-symbols-outlined burgerMenu">
+                    star
+                </span>
+            </div>
+            <div id="onglet2M" class="bouton">
+                <span class="material-symbols-outlined burgerMenu">
+                    collections_bookmark
+                </span>
+            </div>
+            <div id="onglet3M" class="bouton">
+                <span class="material-symbols-outlined burgerMenu">
+                    groups
+                </span>
+            </div>
+            <div id="onglet4M" class="bouton">
+                <span class="material-symbols-outlined burgerMenu">
+                    settings
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!--------------------FinDeNavBar----------------------->
     <div id="corps">
         <div id="boitecontainer">
             <!--------------------UserBox----------------------->
@@ -126,6 +124,7 @@
     <!--------------------UserBox----------------------->
     <div id="parentGame">
         <div id="BlocOnglet">
+
             <div id="onglet1" class="ongletOpen">
                 <p class="titleOnglet">Favoris</p>
             </div>
@@ -319,37 +318,39 @@
             </div>
             <!--------------------ongleThree---------------------------------------------------------------------------->
             <div id="ongletThree" class="noVisible">
-                <div class="titleFriends">
-                    <p>Liste d'amis</p>
+                <div id="BoiteFriend">
+                    <div id="listFriends" class="scroller">
+                        <!--------------->
+                        <div id="friends">
+
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+
+                        </div>
+                        <!--------------->
+                        <div id="friends">
+
+                        </div>
+                        <!--------------->
+                    </div>
+                    <div id="mainFriends">
+
+                        
+                    </div>
                 </div>
-                <div class="profilFriends">
-                    <p>Profiles</p>
-                </div>
-                <div id="listFriends" class="scroller">
-
-                    <!--------------->
-                    <div id="friends">
-
-                    </div>
-                    <!--------------->
-                    <div id="friends">
-
-                    </div>
-                    <!--------------->
-                    <div id="friends">
-
-                    </div>
-                    <!--------------->
-                    <div id="friends">
-
-                    </div>
-                    <!--------------->
-                    <div id="friends">
-
-                    </div>
-                    <!--------------->
-                </div>
-                <div id="mainFriends"></div>
             </div>
             <!--------------------ongletFour---------------------------------------------------------------------------->
             <div id="ongletFour" class="noVisible">
@@ -364,8 +365,8 @@
                             <p>Changer d'avatar</p>
                         </button>
 
-                        <h2 class="titleSkin">Thèmes</h2>
                         <div id="boiteSkin">
+                            <h2 class="titleSkin">Thèmes</h2>
                             <div id="skin1"></div>
                             <div id="skin2"></div>
                             <div id="skin3"></div>

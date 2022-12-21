@@ -1,3 +1,6 @@
+
+/*-----------------------Onglet-Ordinateur------------------------------*/
+
 const onglet1 = document.getElementById('onglet1');
 const onglet2 = document.getElementById('onglet2');
 const onglet3 = document.getElementById('onglet3');
@@ -99,3 +102,101 @@ onglet4.addEventListener('click', () => {
     onglet2.classList.remove('ongletOpen');
     onglet2.classList.add('onglet');
 })
+
+
+/*-----------------------Onglet-Mobile------------------------------*/
+
+const onglet1M = document.getElementById('onglet1M');
+const onglet2M = document.getElementById('onglet2M');
+const onglet3M = document.getElementById('onglet3M');
+const onglet4M = document.getElementById('onglet4M');
+
+onglet1M.addEventListener('click', () => {
+    ongletOne.classList.remove('noVisible');
+    ongletOne.classList.add('visible');
+    onglet1M.classList.remove('bouton');
+    onglet1M.classList.add('boutonM');
+
+    ongletTwo.classList.add('noVisible');
+    ongletTwo.classList.remove('Visible');
+    onglet2M.classList.remove('boutonM');
+    onglet2M.classList.add('bouton');
+
+    ongletThree.classList.add('noVisible');
+    ongletThree.classList.remove('Visible');
+    onglet3M.classList.remove('boutonM');
+    onglet3M.classList.add('bouton');
+
+    ongletFour.classList.add('noVisible');
+    ongletFour.classList.remove('Visible');
+    onglet4M.classList.remove('boutonM');
+    onglet4M.classList.add('bouton');
+})
+
+onglet2M.addEventListener('click', () => {
+    ongletTwo.classList.remove('noVisible');
+    ongletTwo.classList.add('visible');
+    onglet2M.classList.remove('bouton');
+    onglet2M.classList.add('boutonM');
+   
+
+    ongletOne.classList.add('noVisible');
+    ongletOne.classList.remove('Visible');
+    onglet1M.classList.remove('boutonM');
+    onglet1M.classList.add('bouton');
+
+    ongletThree.classList.add('noVisible');
+    ongletThree.classList.remove('Visible');
+    onglet3M.classList.remove('boutonM');
+    onglet3M.classList.add('bouton');
+
+    ongletFour.classList.add('noVisible');
+    ongletFour.classList.remove('Visible');
+    onglet4M.classList.remove('boutonM');
+    onglet4M.classList.add('bouton');
+})
+
+onglet3M.addEventListener('click', () => {
+    ongletThree.classList.add('visible');
+    ongletThree.classList.remove('noVisible');
+    onglet3M.classList.add('boutonM');
+    onglet3M.classList.remove('bouton');
+
+    ongletOne.classList.add('noVisible');
+    ongletOne.classList.remove('Visible');
+    onglet1M.classList.remove('boutonM');
+    onglet1M.classList.add('bouton');
+
+    ongletTwo.classList.add('noVisible');
+    ongletTwo.classList.remove('Visible');
+    onglet2M.classList.remove('boutonM');
+    onglet2M.classList.add('bouton');
+    
+    ongletFour.classList.add('noVisible');
+    ongletFour.classList.remove('Visible');
+    onglet4M.classList.remove('boutonM');
+    onglet4M.classList.add('bouton');
+})
+
+onglet4M.addEventListener('click', () => {
+    ongletFour.classList.add('visible');
+    ongletFour.classList.remove('noVisible');
+    onglet4M.classList.add('boutonM');
+    onglet4M.classList.remove('bouton');
+
+    ongletOne.classList.add('noVisible');
+    ongletOne.classList.remove('Visible');
+    onglet1M.classList.remove('boutonM');
+    onglet1M.classList.add('bouton');
+
+    ongletThree.classList.add('noVisible');
+    ongletThree.classList.remove('Visible');
+    onglet3M.classList.remove('boutonM');
+    onglet3M.classList.add('bouton');
+    
+    ongletTwo.classList.add('noVisible');
+    ongletTwo.classList.remove('Visible');
+    onglet2M.classList.remove('boutonM');
+    onglet2M.classList.add('bouton');
+})
+
