@@ -84,6 +84,7 @@
     .bouton:hover {
         background-color: #926319;
     }
+
     .boutonM {
         display: flex;
         align-items: center;
@@ -94,6 +95,7 @@
         border-right: solid whitesmoke 1px;
         background-color: #926319;
     }
+
     .input {
         height: 20px;
         margin: 0.1%;
@@ -260,6 +262,7 @@ cela ajustera mon contenu directement----------*/
         display: flex;
         justify-content: space-evenly;
     }
+
     #onglet1,
     #onglet2,
     #onglet3,
@@ -644,17 +647,24 @@ cela ajustera mon contenu directement----------*/
 
     #listFriends {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
-        height: 15%;
-        width: 80%;
+        height: 18%;
+        width: 90%;
         margin-bottom: 1%;
         margin-left: 0%;
         border-radius: 5px;
         border: solid white 1px;
         background-color: #4d4d4d6c;
+    }
+
+    #boiteHorizontal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: auto;
     }
 
     .scroller {
@@ -688,14 +698,31 @@ cela ajustera mon contenu directement----------*/
 
     #friends {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        height: 150px;
-        width: 150px;
-        margin: 2%;
+        flex-direction: column;
+        justify-content: center;
+        height: 170px;
+        width: 170px;
+        margin: 1%;
         border-radius: 5px;
-        border: solid rgb(255, 255, 255) 1px;
+        color: whitesmoke;
         background-color: rgba(33, 33, 33, 0.617);
+    }
+
+    .imgFriend {
+        height: 90%;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .utilisateurFirend {
+        text-align: center;
+        width: 100%;
+    }
+
+    .ajoutFriend {
+        height: 200px;
+        width: 50px;
+        cursor: pointer;
     }
 
     #photoFirends {
@@ -718,8 +745,8 @@ cela ajustera mon contenu directement----------*/
     }
 
     #mainFriends {
-        height: 80%;
-        width: 80%;
+        height: 75%;
+        width: 90%;
         margin-bottom: 0%;
         margin-right: 0%;
         border-radius: 5px;

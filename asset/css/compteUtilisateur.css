@@ -462,15 +462,26 @@ cela ajustera mon contenu directement----------*/
 
 #friends {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 15%;
-    width: 90%;
-    margin: 3%;
+    flex-direction: column;
+    justify-content: center;
+    height: 170px;
+    width: 150px;
+    margin: 2%;
     border-radius: 5px;
-    border: solid rgb(188, 116, 0) 0.5px;
-    background-color: rgba(255, 255, 255, 0.09);
+    color: whitesmoke;
+    background-color: rgba(33, 33, 33, 0.617);
+}
+
+.imgFriend {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.utilisateurFirend {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5px;
 }
 
 #photoFirends {
