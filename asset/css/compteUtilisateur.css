@@ -27,7 +27,6 @@ cela ajustera mon contenu directement----------*/
     height: 90%;
     width: 90%;
     border: solid rgb(188, 116, 0) 0.5px;
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 }
 
@@ -334,24 +333,27 @@ cela ajustera mon contenu directement----------*/
     height: 30px;
     width: 70%;
     color: whitesmoke;
-    background-color: #272727;
+    background-color: #3e3e3e;
     border: none;
     border-radius: 5px;
 }
+
 #searchGame::placeholder {
 
-    color:#afafaf
+    color: #afafaf
 }
+
 .searchGame {
     font-size: 20px;
     height: 30px;
     width: 20%;
     margin-left: 10px;
     color: whitesmoke;
-    background-color: #272727;
+    background-color: #3e3e3e;
     border: none;
     border-radius: 5px;
 }
+
 .searchGame:hover {
     background-color: #4d4d4d;
 }
@@ -444,7 +446,7 @@ cela ajustera mon contenu directement----------*/
     color: whitesmoke;
     text-align: center;
     width: 20%;
- 
+
 }
 
 #friends {
@@ -618,11 +620,13 @@ cela ajustera mon contenu directement----------*/
     background-color: #31313153;
     transition: 0.5s;
 }
+
 .titleSkin {
     color: whitesmoke;
     margin-top: 20px;
     font-size: 30px;
 }
+
 #boiteSkin {
     display: flex;
     align-items: center;
@@ -649,34 +653,41 @@ cela ajustera mon contenu directement----------*/
 #skin1:hover {
     box-shadow: rgb(157, 112, 21) 0px 0px 5px;
     transition: 0.3s;
-    }
+}
+
 #skin2:hover {
     box-shadow: rgb(157, 112, 21) 0px 0px 5px;
     transition: 0.3s;
-    }
+}
+
 #skin3:hover {
     box-shadow: rgb(157, 112, 21) 0px 0px 5px;
     transition: 0.3s;
-    }
+}
+
 #skin4:hover {
-box-shadow: rgb(157, 112, 21) 0px 0px 5px;
-transition: 0.3s;
+    box-shadow: rgb(157, 112, 21) 0px 0px 5px;
+    transition: 0.3s;
 }
+
 #skin1 {
-    background-image: url('../img/backFour.png');
-    background-size: 250% ;
+    background-image: url('../img/backFive.png');
+    background-size: 250%;
 }
+
 #skin2 {
-    background-image: url('../img/backTwo.png');
-    background-size: 100% ;
+    background-image: url('../img/backFour.png');
+    background-size: 100%;
 }
+
 #skin3 {
     background-image: url('../img/backThree.png');
-    background-size: 250% ;
+    background-size: 250%;
 }
+
 #skin4 {
     background-image: url('../img/backOne.png');
-    background-size: 250% ;
+    background-size: 250%;
 }
 
 /*-----------------Skin----------------*/
@@ -684,32 +695,38 @@ transition: 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../img/backFour.png');
+     background-image: url('../img/backFive.png');
+     background-color: #3e3e3e;
     background-size: 100%;
     transition: 0.5s;
 }
 
 .skinFrontHG1 {
-    background-image: url('../img/backFour.png');
+    background-image: url('../img/backFive.png');
+    background-color: #3e3e3e;
     background-size: 300%;
     transition: 0.5s;
 }
+
 .skinFront1 {
-    background-image: url('../img/backFour.png');
+   background-image: url('../img/backFive.png');
+    background-color: #303030;
     background-size: 100%;
     transition: 0.5s;
 }
+
 .skinFront2 {
-    background-image: url('../img/backTwo.png');
+    background-image: url('../img/backFour.png');
     background-size: 100%;
     transition: 0.5s;
 }
 
 .skinFrontHG2 {
-    background-image: url('../img/backTwo.png');
+    background-image: url('../img/backFour.png');
     background-size: 300%;
     transition: 0.5s;
 }
+
 .skinFront3 {
     background-image: url('../img/backThree.png');
     background-size: 100%;
@@ -721,6 +738,7 @@ transition: 0.3s;
     background-size: 300%;
     transition: 0.5s;
 }
+
 .skinFront4 {
     background-image: url('../img/backOne.png');
     background-size: 100%;
