@@ -143,6 +143,8 @@
     }
 
     #logoBurger {
+        background-image: url('../img/logoVideoGameDiary.png');
+        background-size: 100%;
         margin-top: 10px;
         height: 400px;
         width: 400px;
