@@ -8,6 +8,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('../img/backFive.png');
+    background-size: 60%;
 }
 .boiteBox {
     display: flex;
@@ -19,7 +21,7 @@ h1 {
     text-align: center;
     border-radius: 5px;
     color: whitesmoke;
-    background-image: url('../img/backFive.png');
+   
 }
 
 #boiteBoxBlur{
@@ -298,8 +300,8 @@ h1 {
         align-items: center;
         justify-content: center;
         text-decoration: none;
-        height: 1900px;
-        width: 900px;
+        height: auto;
+        width: 950px;
     }
 
     .box {

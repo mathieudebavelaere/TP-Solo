@@ -101,10 +101,8 @@
         margin: 1%;
         height: 600px;
         width: 400px;
-
         backdrop-filter: blur(5px);
         border-radius: 15px;
-        
     }
     
     #card:hover {
