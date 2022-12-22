@@ -116,6 +116,7 @@
     z-index: 1;
     height: auto;
     width: 100%;
+    margin-top: 60px;
     margin-left: 10%;
 }
 
@@ -133,7 +134,6 @@
     transition: 1s;
 }
 
-
 .trophées {
     display: flex;
     flex-direction: row;
@@ -143,7 +143,8 @@
     height: 70px;
     width: 100%;
     border-radius: 5px;
-    background-color: rgba(25, 25, 25, 0.366);
+    background-color: rgba(126, 126, 126, 0.399);
+    backdrop-filter: blur(5px);
 }
 
 .imgBox {
@@ -175,8 +176,14 @@
     z-index: 1;
     height: auto;
     width: 100%;
+    font-size: 20px;
     margin-left: 10%;
+    margin-top: 60px;
     color: rgb(215, 215, 215);
+}
+
+.titleGame {
+    text-align: center;
 }
 
 .boiteText {
@@ -188,7 +195,8 @@
     margin-top: 3%;
     padding: 2%;
     border-radius: 5px;
-    background-color: rgba(25, 25, 25, 0.366);
+    background-color: rgba(126, 126, 126, 0.399);
+    backdrop-filter: blur(5px);
 }
 
 .platform {
@@ -196,9 +204,6 @@
     flex-direction: row;
     justify-content: space-around;
 }
-
-
-
 
 
 @media all and (max-width: 1024px) {
@@ -281,8 +286,8 @@
         border: solid whitesmoke 1px;
         border-radius: 5px;
         color: whitesmoke;
-        background-color: #b3b3b368;
-        backdrop-filter: blur(3px);
+        background-color: rgba(180, 180, 180, 0.399);
+        backdrop-filter: blur(5px);
     }
 
     #voletD {
@@ -304,7 +309,8 @@
         width: 90%;
         height: 90px;
         border-radius: 5px;
-        background-color: rgba(25, 25, 25, 0.364);
+        background-color: rgba(126, 126, 126, 0.399);
+        backdrop-filter: blur(5px);
     }
 
     .imgBox {
@@ -330,30 +336,42 @@
         color: rgb(215, 215, 215);
         margin-bottom: 2%;
     }
+
+    #boiteTrophée {
+        z-index: 1;
+        height: auto;
+        width: 100%;
+        margin-top: 0;
+        margin-left: 10%;
+    }
+
     /*--------------Boite-Text-----------*/
-#boiteDescription {
-    z-index: 1;
-    height: auto;
-    width: 100%;
-    margin-left: 5%;
-    color: rgb(215, 215, 215);
-}
+    #boiteDescription {
+        z-index: 1;
+        height: auto;
+        width: 100%;
+        margin-left: 5%;
+        margin-top: 0;
+        color: rgb(215, 215, 215);
+        font-size: 20px;
+    }
 
-.boiteText {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: auto;
-    width: 90%;
-    margin-top: 3%;
-    padding: 2%;
-    border-radius: 5px;
-    background-color: rgba(25, 25, 25, 0.366);
-}
+    .boiteText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: auto;
+        width: 90%;
+        margin-top: 3%;
+        padding: 2%;
+        border-radius: 5px;
+        background-color: rgba(126, 126, 126, 0.399);
+        backdrop-filter: blur(5px);
+    }
 
-.platform {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
+    .platform {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
