@@ -546,22 +546,23 @@ cela ajustera mon contenu directement----------*/
     #searchGame {
         font-size: 25px;
         height: 70%;
-        width: 60%;
+        width: 80%;
         color: whitesmoke;
-        background-color: #585858;
+        background-color: #3e3e3e;
         border: none;
         border-radius: 5px;
     }
 
     .searchGame {
-        font-size: 25px;
-        height: 70%;
-        width: 30%;
-        margin-left: 10px;
+        font-size: 20px;
+        height: 70px;
+        width: 70px;
+        margin-left: 0px;
+        margin-right: 5px;
         color: whitesmoke;
-        background-color: #585858;
+        background-color: #3e3e3e;
         border: none;
-        border-radius: 5px;
+        border-radius: 100%;
     }
 
     .searchGame:hover {

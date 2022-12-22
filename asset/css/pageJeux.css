@@ -253,8 +253,8 @@
     }
 
     #like {
-        height: 90px;
-        width: 90px;
+        height: 120px;
+        width: 120px;
         border-radius: 100%;
         border: solid whitesmoke 1px;
         background-color: #b3b3b368;
@@ -263,8 +263,8 @@
     }
 
     #noLike {
-        height: 90px;
-        width: 90px;
+        height: 120px;
+        width: 120px;
         border-radius: 100%;
         border: solid whitesmoke 1px;
         background-color: #b3b3b368;
@@ -272,17 +272,17 @@
     }
 
     .boutonlike {
-        font-size: 50px;
+        font-size: 70px;
         color: whitesmoke;
     }
 
     #Description,
     #Trophées {
-        height: 50px;
+        height: 100px;
         width: 80%;
         margin-top: 0%;
         margin-left: 5%;
-        font-size: 20px;
+        font-size: 30px;
         border: solid whitesmoke 1px;
         border-radius: 5px;
         color: whitesmoke;
@@ -307,7 +307,7 @@
         justify-content: center;
         margin-top: 10%;
         width: 90%;
-        height: 90px;
+        height: auto;
         border-radius: 5px;
         background-color: rgba(126, 126, 126, 0.399);
         backdrop-filter: blur(5px);
@@ -327,12 +327,12 @@
     }
 
     .textBox1 {
-        font-size: 30px;
+        font-size: 50px;
         color: whitesmoke;
     }
 
     .textBox2 {
-        font-size: 20px;
+        font-size: 30px;
         color: rgb(215, 215, 215);
         margin-bottom: 2%;
     }
@@ -353,7 +353,7 @@
         margin-left: 5%;
         margin-top: 0;
         color: rgb(215, 215, 215);
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .boiteText {
@@ -372,6 +372,7 @@
     .platform {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
     }
 }

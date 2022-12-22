@@ -7,10 +7,12 @@
     height: auto;
     background-image: url(#);
 }
+
 #navPC {
     display: flex;
     width: 100%;
 }
+
 #navMobil {
     display: none;
 }
@@ -351,13 +353,13 @@ cela ajustera mon contenu directement----------*/
 
 .searchGame {
     font-size: 20px;
-    height: 30px;
-    width: 20%;
+    height: 50px;
+    width: 50px;
     margin-left: 10px;
     color: whitesmoke;
     background-color: #3e3e3e;
     border: none;
-    border-radius: 5px;
+    border-radius: 100%;
 }
 
 .searchGame:hover {
@@ -481,6 +483,10 @@ cela ajustera mon contenu directement----------*/
     border-radius: 5px;
     color: whitesmoke;
     background-color: rgba(33, 33, 33, 0.617);
+}
+
+#friends:hover {
+    box-shadow: whitesmoke 0px 0px 10px;
 }
 
 .imgFriend {
