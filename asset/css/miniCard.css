@@ -3,8 +3,8 @@
     margin: 1%;
     height: 300px;
     width: 200px;
-    background-color: #8e8e8e9e;
-    backdrop-filter: blur(5px);
+    background-color: #b3b3b368;
+    backdrop-filter: blur(3px);
     border-radius: 15px;
     border: solid rgba(255, 255, 255, 0.669) 1px;
 }
@@ -20,7 +20,7 @@
     justify-content: center;
     font-size: 70%;
     margin: 5%;
-    color: rgb(255, 255, 255, 0.8);
+    color: rgb(187, 140, 9);
     border-radius: 50px;
     height: 20px;
     width: 90%;
@@ -57,7 +57,7 @@
     border-radius: 50px;
     background-image: url(../img/stars.png);
     background-size: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.399);
     backdrop-filter: blur(5px);
     cursor: pointer;
     transition: 0.5s;
@@ -78,7 +78,7 @@
     color: rgb(255, 255, 255, 0.8);
     border-radius: 50px;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.399);
     backdrop-filter: blur(5px);
     transition: 0.5s;
 }
@@ -117,11 +117,11 @@
         align-items: center;
         justify-content: center;
         font-size: 24px;
-        color: rgb(255, 255, 255, 0.8);
+        color: rgb(187, 140, 9);
         border-radius: 50px;
         height: 40px;
         width: 90%;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.399);
         backdrop-filter: blur(5px);
     
     }
@@ -154,7 +154,7 @@
         border-radius: 50px;
         background-image: url(../img/stars.png);
         background-size: 100%;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.399);
         backdrop-filter: blur(5px);
         cursor: pointer;
         transition: 0.5s;
@@ -176,7 +176,7 @@
         color: rgb(255, 255, 255, 0.8);
         border-radius: 50px;
         cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.399);
         backdrop-filter: blur(5px);
         transition: 0.5s;
     }

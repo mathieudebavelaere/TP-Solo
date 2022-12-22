@@ -14,6 +14,9 @@
 #navMobil {
     display: none;
 }
+
+
+
 /*--------Pour agrandire mon contenu de ma boxGame je modifie la hauteur de ma div 'parentGame' directment 
 cela ajustera mon contenu directement----------*/
 #parentGame {
@@ -29,7 +32,7 @@ cela ajustera mon contenu directement----------*/
 #boxGame {
     position: absolute;
     margin-top: 40px;
-    height: 90%;
+    height: 100%;
     width: 90%;
     border: solid rgb(188, 116, 0) 0.5px;
     border-radius: 5px;
@@ -93,9 +96,7 @@ cela ajustera mon contenu directement----------*/
     font-size: 30px;
     text-align: center;
     width: 90%;
-    margin: 1%;
-    margin-left: 60px;
-    border-radius: 5px;
+    border-bottom: solid rgb(167, 127, 19) 5px;
 }
 
 #boitecontainer {
@@ -433,15 +434,13 @@ cela ajustera mon contenu directement----------*/
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 80%;
+    height: 90%;
     width: 20%;
-    margin-bottom: 6%;
+    margin-bottom: 0%;
     margin-left: 3%;
     border-radius: 5px;
     border: solid white 1px;
     background-color: #4d4d4d6c;
-
-
 }
 
 .scroller {
@@ -517,9 +516,9 @@ cela ajustera mon contenu directement----------*/
 }
 
 #mainFriends {
-    height: 80%;
+    height: 90%;
     width: 55%;
-    margin-bottom: 6%;
+    margin-bottom: 0%;
     margin-right: 3%;
     border-radius: 5px;
     border: solid rgb(188, 116, 0) 0.5px;
@@ -556,9 +555,8 @@ cela ajustera mon contenu directement----------*/
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 80%;
+    height: 90%;
     width: 85%;
-    margin-bottom: 6%;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.386);
 }
@@ -568,9 +566,10 @@ cela ajustera mon contenu directement----------*/
     width: 200px;
     margin-top: 20px;
     border-radius: 15%;
-    background-image: url('#');
+    background-image: url('../img/avatar/Unknown-2.jpeg');
+    background-size: 100% 100%;
     background-color: rgba(92, 92, 92, 0.353);
-    border: solid whitesmoke 1px;
+
 }
 
 #boiteReglageG {
@@ -588,7 +587,7 @@ cela ajustera mon contenu directement----------*/
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 100%;
     height: 30px;
     border: none;
     border-radius: 5px;
@@ -603,7 +602,6 @@ cela ajustera mon contenu directement----------*/
 
 .boutonReglage:hover {
     background-color: #31313153;
-    border: solid rgb(188, 116, 0) 0.5px;
     transition: 0.5s;
 }
 
@@ -625,7 +623,6 @@ cela ajustera mon contenu directement----------*/
     height: 43px;
     width: 70%;
     font-size: 13px;
-    border: solid rgb(188, 116, 0) 0.5px;
     border-radius: 3px;
     padding-left: 5%;
     color: rgb(255, 255, 255);
@@ -642,7 +639,6 @@ cela ajustera mon contenu directement----------*/
     border-radius: 3px;
     color: whitesmoke;
     background-color: rgba(92, 92, 92, 0.353);
-    border: solid rgb(188, 116, 0) 0.5px;
     cursor: pointer;
 }
 

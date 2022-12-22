@@ -27,14 +27,17 @@
         height: 100px;
         background-color: #785112;
     }
+
     #navPC {
         display: none;
         width: 100%;
     }
+
     #navMobil {
-        display:flex;
+        display: flex;
         width: 100%;
     }
+
     #burgerBar {
         display: flex;
     }
@@ -250,7 +253,7 @@
 cela ajustera mon contenu directement----------*/
     #parentGame {
         width: 100%;
-        margin-bottom: 3%;
+        margin-bottom: 20%;
         margin-top: 0px;
         height: 1250px;
     }
@@ -330,12 +333,12 @@ cela ajustera mon contenu directement----------*/
 
     .catégorie {
         color: whitesmoke;
-        font-size: 50px;
+        font-size: 40px;
         text-align: center;
         width: 90%;
-        margin: 1%;
-        margin-left: 60px;
-        border-radius: 5px;
+        margin-bottom: 2%;
+        margin-top: 5%;
+        border-bottom: solid rgb(167, 127, 19) 5px;
     }
 
     #boitecontainer {
@@ -656,7 +659,7 @@ cela ajustera mon contenu directement----------*/
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: flex-start;
         height: 18%;
         width: 90%;
@@ -671,6 +674,7 @@ cela ajustera mon contenu directement----------*/
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        align-items: center;
         width: auto;
     }
 
@@ -753,7 +757,7 @@ cela ajustera mon contenu directement----------*/
     }
 
     #mainFriends {
-        height: 75%;
+        height: 67%;
         width: 90%;
         margin-bottom: 0%;
         margin-right: 0%;
@@ -787,32 +791,51 @@ cela ajustera mon contenu directement----------*/
 
     #boxReglage {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
         height: 90%;
         width: 95%;
-        margin-bottom: 1%;
+  
         border-radius: 5px;
         background-color: #4d4d4d6c;
     }
 
+    #boiteAvatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 40%;
+    }
+
+    #boiteSkin {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 60%;
+        margin-top: 0%;
+    }
+
     .avatarReglage {
-        height: 150px;
-        width: 150px;
+        height: 250px;
+        width: 250px;
         margin-top: px;
         border-radius: 15%;
-        background-image: url('#');
+        background-image: url('../img/avatar/Unknown-2.jpeg');
+        background-size: 100% 100%;
         background-color: rgba(255, 255, 255, .5);
         margin-right: 0%;
     }
 
     #boiteReglageG {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        height: 70%;
+        height: 30%;
         width: 100%;
         margin-left: 3%;
     }
@@ -821,11 +844,12 @@ cela ajustera mon contenu directement----------*/
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 20%;
-        height: 30px;
+        width: 70%;
+        height: 40px;
         border: none;
         border-radius: 5px;
         margin-top: 5%;
+        font-size: 20px;
         color: whitesmoke;
         background-color: #4d4d4dad;
         border: solid whitesmoke 1px;
@@ -837,8 +861,8 @@ cela ajustera mon contenu directement----------*/
     }
 
     #boiteReglageD {
-        height: 100%;
-        width: 60%;
+        height: 50%;
+        width: 90%;
         margin: 0%;
     }
 
@@ -846,54 +870,45 @@ cela ajustera mon contenu directement----------*/
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 15%;
+        margin-top: 0%;
     }
 
     .box {
         margin-top: 2%;
-        height: 43px;
+        height: 60px;
         width: 70%;
         font-size: 13px;
-        border: solid rgba(245, 245, 245, 0.53) 1px;
         border-radius: 3px;
         padding-left: 5%;
         color: rgb(255, 255, 255);
-        background-color: hsla(0, 0%, 0%, 0.251);
+        background-color: hsla(0, 0%, 10%, 0.816);
     }
-
+    
     .boutonF {
         margin-top: 2%;
-        height: 30px;
-        width: 40%;
-        font-size: 15px;
+        height: 50px;
+        width: 50%;
+        font-size: 20px;
         text-align: center;
         border: solid rgba(245, 245, 245, 0.464) 1px;
         border-radius: 3px;
-        color: whitesmoke;
-        background-color: #ffffff85;
+        background-color: #4d4d4dad;
         border: solid whitesmoke 1px;
         cursor: pointer;
     }
-
+    
     .boutonF:hover {
         background-color: #31313153;
+        transition: 0.5s;
     }
+    
 
     .titleSkin {
         text-align: center;
         color: whitesmoke;
         margin-top: 0px;
-        font-size: 20px;
+        font-size: 30px;
         width: 100%;
     }
 
-    #boiteSkin {
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 90%;
-
-        height: 150px;
-    }
 }

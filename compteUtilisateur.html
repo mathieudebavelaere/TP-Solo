@@ -13,8 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./asset/css/compteUtilisateur.css">
     <link rel="stylesheet" href="./asset/css/Nav-Foot.css">
-    <link rel="stylesheet" href="./asset/css/mobile.css">
     <link rel="stylesheet" href="./asset/css/miniCard.css">
+    <link rel="stylesheet" href="./asset/css/mobile.css">
     <title>Compte</title>
 </head>
 
@@ -45,15 +45,16 @@
         </div>
     </div>
     <!--------------------VoletBuger----------------------->
+
+
+
     <!-----------------------NavBar------------------------->
     <nav id="navBar">
+        <!-----------------------NavBar-PC------------------------>
         <div id="navPC">
             <img id="logo" src="./asset/img/logoVideoGameDiary.png" alt="logo">
 
             <div id="boiteConex2">
-                <div id="boiteBurger">
-                    <span class="material-symbols-outlined burgerMenu">menu</span>
-                </div>
                 <a class="bouton" href="./index.html">
                     <span class="material-symbols-outlined burgerMenu">
                         home
@@ -78,6 +79,7 @@
                 </a>
             </div>
         </div>
+        <!-----------------------NavBar-Mobile------------------------>
         <div id="navMobil">
             <img id="logo" src="./asset/img/logoVideoGameDiary.png" alt="logo">
 
@@ -173,7 +175,7 @@
 
             <div id="boxGame" class="skinFront1">
                 <!--------------------ongletOne---------------------------------------------------------------------------->
-                <div id="ongletOne" class="visible scroller">
+                <div id="ongletOne" class="visible">
                     <div id="cardGame">
                         <!--------------------Card----------------------->
                         <div id="card">
@@ -352,6 +354,7 @@
             <!--------------------ongleThree---------------------------------------------------------------------------->
             <div id="ongletThree" class="noVisible">
                 <div id="BoiteFriend">
+
                     <div id="listFriends" class="scroller">
                         <div id="boiteHorizontal">
                             <!--------------->
@@ -414,11 +417,12 @@
                 <div id="boxReglage">
 
                     <div id="boiteReglageG">
-                        <div class="avatarReglage"></div>
-                        <button class="boutonReglage">
-                            <p>Changer d'avatar</p>
-                        </button>
-
+                        <div id="boiteAvatar">
+                            <div class="avatarReglage"></div>
+                            <button class="boutonReglage">
+                                <p>Changer d'avatar</p>
+                            </button>
+                        </div>
                         <div id="boiteSkin">
                             <h2 class="titleSkin">Thèmes</h2>
                             <div id="skin1"></div>
@@ -426,11 +430,10 @@
                             <div id="skin3"></div>
                             <div id="skin4"></div>
                         </div>
-
                     </div>
-
                     <div id="boiteReglageD">
                         <div class="profilReglage">
+                            <h2 class="titleSkin">Modifications</h2>
                             <input id="firstName" required class="box" type="text" placeholder="Nom">
                             <input id="lastName" required class="box" type="text" placeholder="Prénom">
                             <input id="birthDay" required class="box" type="Date" id="Birthday">
@@ -448,7 +451,7 @@
         </div>
     </div>
     <!------------------------Footer------------------------->
-   <!-- <footer id="footerBox"></footer> -->
+    <!-- <footer id="footerBox"></footer> -->
     <!---------------------FinDeFooter----------------------->
     <script src="./asset/js/BurgerMenu.js"></script>
     <script src="./asset/js/onglet.js"></script>
